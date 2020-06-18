@@ -1,4 +1,5 @@
 const { ORDERED_ARRAY } = require("../data");
+const { expect } = require("../expect");
 
 const TARGET = 7;
 
@@ -27,4 +28,4 @@ function binarySearch(array, target) {
 }
 
 const index = binarySearch(ORDERED_ARRAY, TARGET);
-console.log(index);
+expect(index).toBe(7);

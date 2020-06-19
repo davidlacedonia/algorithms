@@ -34,4 +34,4 @@ function binarySearch(array, target) {
 }
 
 const index = binarySearch(ORDERED_ARRAY, TARGET);
-expect(index).toBe(7);
+expect(index).toBe(6);

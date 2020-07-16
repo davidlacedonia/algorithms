@@ -1,6 +1,10 @@
 const isArrayEqual = (left, right) => {
   let equal = true;
 
+  if (!left || !right || !left.length || !right.length) {
+    return false;
+  }
+
   for (let i = 0; i < right.length && !!equal; i++) {
     if (left[i] !== right[i]) {
       equal = false;

@@ -1,7 +1,7 @@
 const { generateLinkedList } = require("../node");
 
 /**
- * Swap adjacents elements on linked list recursively.
+ * Swap adjacents elements on linked list recursively. O(n)
  *
  * 4 -> 3 -> 2 -> 1
  * into

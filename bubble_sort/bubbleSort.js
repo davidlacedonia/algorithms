@@ -2,10 +2,10 @@ const { expect } = require("../expect");
 const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../data");
 
 /**
- * Bubble Sort O(n2)
+ * Bubble Sort O(n2).
  *
- * Loops through the array (n2) swapping adjacent pairs from left to right
- * Swaps if the left element is greater than the right element
+ * Loops through the array swapping adjacent pairs from left to right.
+ * Swaps if the left element is greater than the right element.
  */
 function bubbleSort(array) {
   for (let j = 0; j < array.length; j++) {

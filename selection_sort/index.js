@@ -4,20 +4,25 @@ const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../data");
 /**
  * Selection sort O(n2).
  *
- * Loops every item, and for each of them, loops in reverse order.
- * If the (previous) element is greater than the actual value,
- * moves it one place to the right.
+ * Loop through every element in the array,
+ * and for each element, we iterate every element on the right.
+ * If there is a lesser value, we swap them.
  */
 function selectionSort(array) {
-  for (let i = 1; i < array.length; i++) {
-    const value = array[i];
+  for (let i = 0; i < array.length - 1; i++) {
+    let indexMin = i;
 
-    let j = i - 1;
-    while (j >= 0 && array[j] > value) {
-      array[j + 1] = array[j];
-      j--;
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[j] < array[indexMin]) {
+        indexMin = j;
+      }
     }
-    array[j + 1] = value;
+
+    if (i !== indexMin) {
+      const aux = array[indexMin];
+      array[indexMin] = array[i];
+      array[i] = aux;
+    }
   }
   return array;
 }

@@ -24,3 +24,5 @@ function insertionSort(array) {
 
 const result = insertionSort(UNORDERED_ARRAY);
 expect(result).toBe(ORDERED_ARRAY);
+
+module.exports = insertionSort;

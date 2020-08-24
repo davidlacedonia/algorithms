@@ -1,5 +1,5 @@
-const { ORDERED_ARRAY } = require("../data");
-const { expect } = require("../expect");
+const { ORDERED_ARRAY } = require("../../data");
+const { expect } = require("../../expect");
 
 const TARGET = 7;
 

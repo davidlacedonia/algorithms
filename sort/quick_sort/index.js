@@ -1,5 +1,5 @@
-const { expect } = require("../expect");
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../data");
+const { expect } = require("../../expect");
+const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
 
 function partition(array, min, max) {
   const pivot = array[max];

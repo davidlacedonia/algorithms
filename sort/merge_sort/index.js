@@ -1,5 +1,5 @@
-const { expect } = require("../expect");
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../data");
+const { expect } = require("../../expect");
+const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
 
 const sortHalves = (left, right) => {
   let sorted = [];

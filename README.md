@@ -24,3 +24,5 @@
 [Linear search](https://github.com/davidlacedonia/algorithms/tree/master/search/linear_search)
 
 [Jump search](https://github.com/davidlacedonia/algorithms/tree/master/search/jump_search)
+
+[Interpolation search](https://github.com/davidlacedonia/algorithms/tree/master/search/interpolation_search)

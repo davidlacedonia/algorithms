@@ -1,6 +1,3 @@
-const { expect } = require("../../expect");
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-
 const sortHalves = (left, right) => {
   let sorted = [];
   let i = 0;
@@ -35,5 +32,4 @@ function mergeSort(array) {
   return sortHalves(mergeSort(left), mergeSort(right));
 }
 
-const result = mergeSort(UNORDERED_ARRAY);
-expect(result).toBe(ORDERED_ARRAY);
+module.exports = mergeSort;

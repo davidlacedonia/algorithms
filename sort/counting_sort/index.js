@@ -1,6 +1,3 @@
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-const { expect } = require("../../expect");
-
 /**
  * Counting sort O(n + k).
  *
@@ -40,5 +37,4 @@ function countingSort(array) {
   return result.filter((i) => !!i);
 }
 
-const result = countingSort(UNORDERED_ARRAY);
-expect(result).toBe(ORDERED_ARRAY);
+module.exports = countingSort;

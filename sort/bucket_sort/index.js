@@ -1,5 +1,3 @@
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-const { expect } = require("../../expect");
 const insertionSort = require("../insertion_sort");
 
 /**
@@ -33,5 +31,4 @@ function bucketSort(array, LARGEST = 10) {
   return result;
 }
 
-const result = bucketSort(UNORDERED_ARRAY);
-expect(result).toBe(ORDERED_ARRAY);
+module.exports = bucketSort;

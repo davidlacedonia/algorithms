@@ -1,6 +1,3 @@
-const { ORDERED_ARRAY } = require("../../data");
-const { expect } = require("../../expect");
-
 /**
  * Calculates position with formula.
  *
@@ -54,5 +51,4 @@ function interpolationSearch(array, element) {
   return -1;
 }
 
-const result = interpolationSearch(ORDERED_ARRAY, ORDERED_ARRAY[3]);
-expect(result).toBe(3);
+module.exports = interpolationSearch;

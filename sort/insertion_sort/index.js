@@ -1,6 +1,3 @@
-const { expect } = require("../../expect");
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-
 /**
  * Insertion sort O(n2).
  *
@@ -21,8 +18,5 @@ function insertionSort(array) {
   }
   return array;
 }
-
-const result = insertionSort(UNORDERED_ARRAY);
-expect(result).toBe(ORDERED_ARRAY);
 
 module.exports = insertionSort;

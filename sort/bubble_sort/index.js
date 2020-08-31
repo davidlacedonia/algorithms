@@ -1,6 +1,3 @@
-const { expect } = require("../../expect");
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-
 /**
  * Bubble Sort O(n2).
  *
@@ -21,5 +18,4 @@ function bubbleSort(array) {
   return array;
 }
 
-const result = bubbleSort(UNORDERED_ARRAY);
-expect(result).toBe(ORDERED_ARRAY);
+module.exports = bubbleSort;

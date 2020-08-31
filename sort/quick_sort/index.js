@@ -1,6 +1,3 @@
-const { expect } = require("../../expect");
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-
 function partition(array, min, max) {
   const pivot = array[max];
   let i = min - 1;
@@ -38,5 +35,4 @@ function quickSort(array, min, max) {
   return array;
 }
 
-const result = quickSort(UNORDERED_ARRAY, 0, UNORDERED_ARRAY.length - 1);
-expect(result).toBe(ORDERED_ARRAY);
+module.exports = quickSort;

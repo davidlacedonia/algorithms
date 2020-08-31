@@ -1,8 +1,3 @@
-const { ORDERED_ARRAY } = require("../../data");
-const { expect } = require("../../expect");
-
-const TARGET = 7;
-
 /**
  * Binary Search O(log n).
  *
@@ -33,5 +28,4 @@ function binarySearch(array, target) {
   return null;
 }
 
-const index = binarySearch(ORDERED_ARRAY, TARGET);
-expect(index).toBe(6);
+module.exports = binarySearch;

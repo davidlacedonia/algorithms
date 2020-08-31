@@ -1,6 +1,3 @@
-const { expect } = require("../../expect");
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-
 /**
  * Selection sort O(n2).
  *
@@ -27,5 +24,4 @@ function selectionSort(array) {
   return array;
 }
 
-const result = selectionSort(UNORDERED_ARRAY);
-expect(result).toBe(ORDERED_ARRAY);
+module.exports = selectionSort;

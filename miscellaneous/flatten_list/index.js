@@ -10,8 +10,7 @@
 function flattenList(list) {
   let flattened = [];
 
-  for (let i = 0; i < list.length; i++) {
-    const element = list[i];
+  for (let element of list) {
     if (Array.isArray(element)) {
       flattened.push(...flattenList(element));
     } else {

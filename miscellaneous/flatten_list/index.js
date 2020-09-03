@@ -3,6 +3,8 @@
  *
  * Loops array of elements recursively.
  *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
  * @param {array} list Array of elements
  *
  * @returns {array} flattened array

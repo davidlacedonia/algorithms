@@ -1,0 +1,18 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlacedonia/algorithms.git"
+  },
+  "author": "David Lacedonia",
+  "license": "ISC",
+  "homepage": "https://github.com/davidlacedonia/algorithms#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}

@@ -31,4 +31,5 @@
 ## Miscellaneous
 
 [Flatten list](https://github.com/davidlacedonia/algorithms/tree/master/miscellaneous/flatten_list)
+
 [Memoization](https://github.com/davidlacedonia/algorithms/tree/master/miscellaneous/memoization)

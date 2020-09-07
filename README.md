@@ -16,7 +16,6 @@
 
 [Selection sort](https://github.com/davidlacedonia/algorithms/tree/master/src/sort/selection_sort)
 
-
 ## Search
 
 [Binary search](https://github.com/davidlacedonia/algorithms/tree/master/src/search/binary_search)
@@ -27,9 +26,10 @@
 
 [Interpolation search](https://github.com/davidlacedonia/algorithms/tree/master/src/search/interpolation_search)
 
-
 ## Miscellaneous
 
 [Flatten list](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/flatten_list)
 
 [Memoization](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/memoization)
+
+[Currying](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/currying)

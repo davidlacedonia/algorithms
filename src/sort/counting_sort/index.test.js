@@ -1,5 +1,5 @@
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-const countingSort = require("./index");
+import { UNORDERED_ARRAY, ORDERED_ARRAY } from "../../data";
+import countingSort  from "./index";
 
 test("counting sort", () => {
   const result = countingSort(UNORDERED_ARRAY);

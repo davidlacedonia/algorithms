@@ -1,4 +1,4 @@
-const insertionSort = require("../insertion_sort");
+import insertionSort from "../insertion_sort";
 
 /**
  * Bucket sort O(n+k).
@@ -31,4 +31,4 @@ function bucketSort(array, LARGEST = 10) {
   return result;
 }
 
-module.exports = bucketSort;
+export default bucketSort;

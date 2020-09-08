@@ -1,5 +1,5 @@
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-const mergeSort = require("./index");
+import { UNORDERED_ARRAY, ORDERED_ARRAY } from "../../data";
+import mergeSort from "./index";
 
 test("merge sort", () => {
   const result = mergeSort(UNORDERED_ARRAY);

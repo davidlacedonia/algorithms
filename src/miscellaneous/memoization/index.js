@@ -26,4 +26,4 @@ function memoization(fn) {
   };
 }
 
-module.exports = memoization;
+export default memoization;

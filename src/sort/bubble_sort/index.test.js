@@ -1,5 +1,5 @@
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-const bubbleSort = require("./index");
+import { UNORDERED_ARRAY, ORDERED_ARRAY } from "../../data";
+import bubbleSort from "./index";
 
 test("bubble sort", () => {
   const result = bubbleSort(UNORDERED_ARRAY);

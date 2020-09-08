@@ -1,4 +1,4 @@
-const curry = require("./index");
+import curry from "./index";
 
 function sum(a, b, c, d) {
   return a + b + c + d;

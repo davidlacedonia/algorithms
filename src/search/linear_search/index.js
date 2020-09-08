@@ -15,4 +15,4 @@ function linearSearch(array, element) {
   return -1;
 }
 
-module.exports = linearSearch;
+export default linearSearch;

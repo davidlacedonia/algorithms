@@ -23,4 +23,4 @@ function flattenList(list) {
   return flattened;
 }
 
-module.exports = flattenList;
+export default flattenList;

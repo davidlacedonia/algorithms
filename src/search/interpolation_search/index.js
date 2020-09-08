@@ -51,4 +51,4 @@ function interpolationSearch(array, element) {
   return -1;
 }
 
-module.exports = interpolationSearch;
+export default interpolationSearch;

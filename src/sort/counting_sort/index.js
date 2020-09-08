@@ -37,4 +37,4 @@ function countingSort(array) {
   return result.filter((i) => !!i);
 }
 
-module.exports = countingSort;
+export default countingSort;

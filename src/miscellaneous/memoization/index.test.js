@@ -1,6 +1,6 @@
-const linearSearch = require("../../search/linear_search");
-const memo = require("./index");
-const { ORDERED_ARRAY } = require("../../data");
+import { ORDERED_ARRAY } from "../../data";
+import linearSearch from "../../search/linear_search";
+import memo from "./index";
 
 let memoizedLinearSearch;
 

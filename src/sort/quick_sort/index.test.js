@@ -1,5 +1,5 @@
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-const quickSort = require("./index");
+import { UNORDERED_ARRAY, ORDERED_ARRAY } from "../../data";
+import quickSort from "./index";
 
 test("quick sort", () => {
   const result = quickSort(UNORDERED_ARRAY, 0, UNORDERED_ARRAY.length - 1);

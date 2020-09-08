@@ -1,5 +1,5 @@
-const { ORDERED_ARRAY } = require("../../data");
-const jumpSearch = require("./index");
+import { ORDERED_ARRAY } from "../../data";
+import jumpSearch from "./index";
 
 test("jump search", () => {
   const result = jumpSearch(ORDERED_ARRAY, ORDERED_ARRAY[6]);

@@ -24,4 +24,4 @@ function selectionSort(array) {
   return array;
 }
 
-module.exports = selectionSort;
+export default selectionSort;

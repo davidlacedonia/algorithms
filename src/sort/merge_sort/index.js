@@ -32,4 +32,4 @@ function mergeSort(array) {
   return sortHalves(mergeSort(left), mergeSort(right));
 }
 
-module.exports = mergeSort;
+export default mergeSort;

@@ -1,5 +1,5 @@
-const { LIST, FLATTENED_LIST } = require("../../data");
-const flattenList = require("./index");
+import { LIST, FLATTENED_LIST } from "../../data";
+import flattenList from "./index";
 
 test("flatten list", () => {
   const result = flattenList(LIST);

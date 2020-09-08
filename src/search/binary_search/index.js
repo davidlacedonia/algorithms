@@ -28,4 +28,4 @@ function binarySearch(array, target) {
   return null;
 }
 
-module.exports = binarySearch;
+export default binarySearch;

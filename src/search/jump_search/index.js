@@ -29,4 +29,4 @@ function jumpSearch(array, element) {
   return -1;
 }
 
-module.exports = jumpSearch;
+export default jumpSearch;

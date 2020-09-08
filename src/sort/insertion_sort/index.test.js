@@ -1,5 +1,5 @@
-const { UNORDERED_ARRAY, ORDERED_ARRAY } = require("../../data");
-const insertionSort = require("./index");
+import { UNORDERED_ARRAY, ORDERED_ARRAY } from "../../data";
+import insertionSort from "./index";
 
 test("insertion sort", () => {
   const result = insertionSort(UNORDERED_ARRAY);

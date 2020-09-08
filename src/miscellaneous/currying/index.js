@@ -26,4 +26,4 @@ function curry(fn) {
   };
 }
 
-module.exports = curry;
+export default curry;

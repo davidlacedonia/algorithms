@@ -1,5 +1,5 @@
-const { ORDERED_ARRAY } = require("../../data");
-const binarySearch = require("./index");
+import { ORDERED_ARRAY } from "../../data";
+import binarySearch from "./index";
 
 test("binary search", () => {
   const index = binarySearch(ORDERED_ARRAY, 7);

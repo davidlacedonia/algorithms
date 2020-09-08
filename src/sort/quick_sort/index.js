@@ -35,4 +35,4 @@ function quickSort(array, min, max) {
   return array;
 }
 
-module.exports = quickSort;
+export default quickSort;

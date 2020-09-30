@@ -16,6 +16,8 @@
 
 [Selection sort](https://github.com/davidlacedonia/algorithms/tree/master/src/sort/selection_sort)
 
+[Tim sort](https://github.com/davidlacedonia/algorithms/blob/master/src/sort/tim_sort)
+
 ## Search
 
 [Binary search](https://github.com/davidlacedonia/algorithms/tree/master/src/search/binary_search)

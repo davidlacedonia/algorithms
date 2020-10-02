@@ -33,3 +33,5 @@
 [Memoization](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/memoization)
 
 [Currying](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/currying)
+
+[LRU Cache](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/lru_cache)

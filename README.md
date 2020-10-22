@@ -37,3 +37,7 @@
 [Currying](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/currying)
 
 [LRU Cache](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/lru_cache)
+
+## Binary tree
+
+[Preorder traversal](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/preorder_traversal)

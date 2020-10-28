@@ -15,3 +15,4 @@ export const TREE = {
   },
 };
 export const ORDERED_TREE = [1, 2, 3];
+export const REVERSED_TREE = [3, 2, 1];

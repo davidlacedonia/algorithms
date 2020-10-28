@@ -1,4 +1,3 @@
-import { TestScheduler } from "jest";
 import { TREE, ORDERED_TREE } from "../../data";
 import preorderTraversal from "./index";
 

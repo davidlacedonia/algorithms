@@ -1,21 +1,21 @@
 /**
- * Preorder traversal O(n).
- * 
+ * Postorder traversal O(n).
+ *
  * @author David Lacedonia <davidlacedonia@gmail.com>
- * 
+ *
  * @param {object} tree Binary tree
  * @param {array} acc Accumulator
- * 
+ *
  * @return {array} Traversed array
  */
-function preorderTraversal(tree, acc = []) {
+function postorderTraversal(tree, acc = []) {
   if (tree) {
+    postorderTraversal(tree.left, acc);
+    postorderTraversal(tree.right, acc);
     acc.push(tree.val);
-    preorderTraversal(tree.left, acc);
-    preorderTraversal(tree.right, acc);
   }
 
   return acc;
 }
 
-export default preorderTraversal;
+export default postorderTraversal;

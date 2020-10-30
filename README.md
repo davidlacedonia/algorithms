@@ -43,3 +43,5 @@
 [Preorder traversal](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/preorder_traversal)
 
 [Postorder traversal](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/postorder_traversal)
+
+[Inorder traversal](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/inorder_traversal)

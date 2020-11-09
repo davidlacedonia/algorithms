@@ -38,6 +38,8 @@
 
 [LRU Cache](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/lru_cache)
 
+[LFU Cache](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/lfu_cache)
+
 ## Binary tree
 
 [Preorder traversal](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/preorder_traversal)

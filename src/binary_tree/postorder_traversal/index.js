@@ -12,7 +12,7 @@ function postorderTraversal(tree, acc = []) {
   if (tree) {
     postorderTraversal(tree.left, acc);
     postorderTraversal(tree.right, acc);
-    acc.push(tree.val);
+    acc.push(tree.value);
   }
 
   return acc;

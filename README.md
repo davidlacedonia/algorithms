@@ -47,3 +47,7 @@
 [Postorder traversal](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/postorder_traversal)
 
 [Inorder traversal](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/inorder_traversal)
+
+## Structures
+
+[Binary tree](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/binary_tree)

@@ -11,7 +11,7 @@
 function inorderTraversal(tree, acc = []) {
   if (tree) {
     inorderTraversal(tree.left, acc);
-    acc.push(tree.val);
+    acc.push(tree.value);
     inorderTraversal(tree.right, acc);
   }
 

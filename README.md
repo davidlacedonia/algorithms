@@ -55,3 +55,5 @@
 [Hash table](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/hash_table)
 
 [Single linked list](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/single_linked_list)
+
+[Stack](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/stack)

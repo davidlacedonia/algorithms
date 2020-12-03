@@ -57,3 +57,5 @@
 [Single linked list](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/single_linked_list)
 
 [Stack](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/stack)
+
+[Queue](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/queue)

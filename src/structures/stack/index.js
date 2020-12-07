@@ -1,9 +1,4 @@
-function StackNode(data) {
-  return {
-    data,
-    next: null,
-  };
-}
+import Node from "../node";
 
 /**
  * Stack.
@@ -17,7 +12,7 @@ function Stack() {
 
   return {
     push: (value) => {
-      const node = new StackNode(value);
+      const node = new Node(value);
       node.next = top;
       top = node;
     },

@@ -1,9 +1,4 @@
-function QueueNode(data) {
-  return {
-    data,
-    next: null,
-  };
-}
+import Node from "../node";
 
 /**
  * Queue.
@@ -18,7 +13,7 @@ function Queue() {
 
   return {
     add: (value) => {
-      const node = new QueueNode(value);
+      const node = new Node(value);
       if (last) {
         last.next = node;
       }

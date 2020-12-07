@@ -1,6 +1,4 @@
-function Node(data) {
-  return { data, next: null };
-}
+import Node from "../node";
 
 /**
  * Single linked list.

@@ -1,4 +1,4 @@
-function Node(value) {
+function TreeNode(value) {
   return {
     value,
     left: null,
@@ -40,7 +40,7 @@ function BinaryTree() {
       return root;
     },
     insert(value) {
-      const node = new Node(value);
+      const node = new TreeNode(value);
 
       if (!root) {
         root = node;

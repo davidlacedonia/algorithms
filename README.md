@@ -59,3 +59,5 @@
 [Stack](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/stack)
 
 [Queue](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/queue)
+
+[Binary heap](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/binary_heap)

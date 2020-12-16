@@ -7,6 +7,8 @@
  * The parent of a node at position n is at position n/2.
  *
  * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @returns {object} items array, push and pop methods
  */
 function BinaryHeap() {
   let items = [null];
@@ -43,47 +45,30 @@ function BinaryHeap() {
      * to conserve the min-heap property.
      */
     pop() {
-      let removedEl = items.splice(1, 1);
-
+      let popped = items.splice(1, 1)[0];
       let last = items.pop();
       items = [items[0], last, ...items.slice(1)];
 
       let index = 1;
-      let childLeftIndex = index * 2;
-      let childRightIndex = index * 2 + 1;
+      let leftIndex = index * 2;
+      let rightIndex = index * 2 + 1;
       while (
-        items[index] >= items[childLeftIndex] ||
-        items[index] >= items[childRightIndex]
+        items[index] >= items[leftIndex] ||
+        items[index] >= items[rightIndex]
       ) {
-        if (
-          items[childLeftIndex] &&
-          items[childLeftIndex] < items[childRightIndex] &&
-          items[index] >= items[childLeftIndex]
-        ) {
-          let aux = items[childLeftIndex];
-          items[childLeftIndex] = items[index];
-          items[index] = aux;
+        let nextIndex =
+          items[leftIndex] < items[rightIndex] ? leftIndex : rightIndex;
+        let aux = items[nextIndex];
+        items[nextIndex] = items[index];
+        items[index] = aux;
 
-          index = childLeftIndex;
-          childLeftIndex = index * 2;
-          childRightIndex = index * 2 + 1;
-        } else if (
-          items[childRightIndex] &&
-          items[childRightIndex] < items[childLeftIndex] &&
-          items[index] >= items[childRightIndex]
-        ) {
-          let aux = items[childRightIndex];
-          items[childRightIndex] = items[index];
-          items[index] = aux;
-
-          index = childRightIndex;
-          childLeftIndex = index * 2;
-          childRightIndex = index * 2 + 1;
-        }
+        index = nextIndex;
+        leftIndex = index * 2;
+        rightIndex = index * 2 + 1;
       }
 
       this.items = items;
-      return removedEl[0];
+      return popped;
     },
   };
 }

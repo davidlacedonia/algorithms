@@ -27,6 +27,5 @@ test("Inserts new value", () => {
 
 test("Pop from binary heap", () => {
   binaryHeap.pop();
-  console.log(binaryHeap.items);
   expect(binaryHeap.items[5]).toEqual(31);
 });

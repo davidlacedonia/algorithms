@@ -61,3 +61,7 @@
 [Queue](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/queue)
 
 [Binary heap](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/binary_heap)
+
+## Common problems
+
+[Fibonacci](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/fibonacci)

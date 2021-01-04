@@ -65,3 +65,5 @@
 ## Common problems
 
 [Fibonacci](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/fibonacci)
+
+[Factorial](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/factorial)

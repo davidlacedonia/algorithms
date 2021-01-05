@@ -3,6 +3,12 @@
  *
  * Loops through the array swapping adjacent pairs from left to right.
  * Swaps if the left element is greater than the right element.
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @param array unsorted elements
+ *
+ * @returns sorted elements
  */
 function bubbleSort(array) {
   for (let j = 0; j < array.length; j++) {

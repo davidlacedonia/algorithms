@@ -1,9 +1,19 @@
-export const randomElements = (limit, max = 10) => {
-  let elements = [];
+/**
+ * Random numbers
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @param {number} limit Size of array
+ * @param {number} max Max number
+ *
+ * @returns {array} Array of random numbers
+ */
+export const randomNumbers = (limit, max = 10) => {
+  let numbers = [];
 
-  while (elements.length < limit) {
-    elements.push(Math.random() * max);
+  while (numbers.length < limit) {
+    numbers.push(Math.random() * max);
   }
 
-  return elements;
+  return numbers;
 };

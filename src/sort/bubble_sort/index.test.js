@@ -1,5 +1,5 @@
 import { UNORDERED_ARRAY, ORDERED_ARRAY } from "../../data";
-import { randomElements } from "../../utils";
+import { randomNumbers } from "../../utils";
 import bubbleSort from "./index";
 
 test("bubble sort", () => {
@@ -7,8 +7,13 @@ test("bubble sort", () => {
   expect(result).toStrictEqual(ORDERED_ARRAY);
 });
 
-test("bubble sort random elements", () => {
-  const unsortedElements = randomElements(10, 500);
-  const sortedElements = unsortedElements.sort((a, b) => a - b);
-  expect(bubbleSort(unsortedElements)).toStrictEqual(sortedElements);
+test("bubble sort random numbers", () => {
+  const unsortedNumbers = randomNumbers(10, 500);
+  const sortedNumbers = unsortedNumbers.sort((a, b) => a - b);
+  expect(bubbleSort(unsortedNumbers)).toStrictEqual(sortedNumbers);
+});
+
+test("bubble sort with wrong type", () => {
+  const result = bubbleSort("wrong type");
+  expect(result).toStrictEqual(null);
 });

@@ -1,3 +1,10 @@
+const swapAdjacentItems = (array, index) => {
+  let aux = array[index + 1];
+  array[index + 1] = array[index];
+  array[index] = aux;
+  return array;
+};
+
 /**
  * Bubble Sort O(n^2).
  *
@@ -18,9 +25,7 @@ function bubbleSort(array = []) {
   for (let j = 0; j < array.length; j++) {
     for (let i = 0; i < array.length - j; i++) {
       if (array[i] > array[i + 1]) {
-        let aux = array[i + 1];
-        array[i + 1] = array[i];
-        array[i] = aux;
+        array = swapAdjacentItems(array, i);
       }
     }
   }

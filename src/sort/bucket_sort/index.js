@@ -1,5 +1,14 @@
 import insertionSort from "../insertion_sort";
 
+const storeInBuckets = (array, size) => {
+  let buckets = [];
+  for (let i = 0; i < array.length; i++) {
+    const bucketIndex = Math.floor(array[i] / size);
+    buckets[bucketIndex] = [...(buckets[bucketIndex] || []), array[i]];
+  }
+  return buckets;
+};
+
 /**
  * Bucket sort O(n+k).
  *
@@ -15,22 +24,12 @@ import insertionSort from "../insertion_sort";
  */
 function bucketSort(array = [], LARGEST = 10) {
   const size = LARGEST / array.length;
-  const buckets = [];
-  let result = [];
 
   if (!Array.isArray(array)) return [];
 
-  for (let i = 0; i < array.length; i++) {
-    const bucketIndex = Math.floor(array[i] / size);
-    buckets[bucketIndex] = [...(buckets[bucketIndex] || []), array[i]];
-  }
-
-  for (let i = 0; i < buckets.length; i++) {
-    const sortedBucket = insertionSort(buckets[i]);
-    result.push(...sortedBucket);
-  }
-
-  return result;
+  const buckets = storeInBuckets(array, size);
+  const sortedBuckets = buckets?.map((bucket) => insertionSort(bucket));
+  return sortedBuckets?.reduce((prev, next) => [...prev, ...next]);
 }
 
 export default bucketSort;

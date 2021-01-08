@@ -5,7 +5,9 @@
  * If the (previous) element is greater than the actual value,
  * moves it one place to the right.
  */
-function insertionSort(array) {
+function insertionSort(array = []) {
+  if (!Array.isArray(array)) return [];
+
   for (let i = 1; i < array.length; i++) {
     const value = array[i];
 

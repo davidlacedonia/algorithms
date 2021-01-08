@@ -15,5 +15,5 @@ test("bubble sort random numbers", () => {
 
 test("bubble sort with wrong type", () => {
   const result = bubbleSort("wrong type");
-  expect(result).toStrictEqual(null);
+  expect(result).toStrictEqual([]);
 });

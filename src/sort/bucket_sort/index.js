@@ -3,29 +3,31 @@ import insertionSort from "../insertion_sort";
 /**
  * Bucket sort O(n+k).
  *
- * Stores elements in buckes (based on some index),
- * sorts each bucket, and returns the union of them all.
+ * Stores elements in buckets (based on some index),
+ * then sorts each bucket, and returns the union of them all.
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @param {array} array unsorted elements
+ * @param {number} LARGEST possible largest element / amount of elements
+ *
+ * @returns {array} sorted elements
  */
-function bucketSort(array, LARGEST = 10) {
+function bucketSort(array = [], LARGEST = 10) {
+  const size = LARGEST / array.length;
   const buckets = [];
   let result = [];
 
-  // optimal size for bucket
-  // possible largest element / amount of elements
-  const size = LARGEST / array.length;
+  if (!Array.isArray(array)) return [];
 
   for (let i = 0; i < array.length; i++) {
-    // calculate the index of bucket (value / size)
-    const index = Math.floor(array[i] / size);
-    buckets[index] = [...(buckets[index] || []), array[i]];
+    const bucketIndex = Math.floor(array[i] / size);
+    buckets[bucketIndex] = [...(buckets[bucketIndex] || []), array[i]];
   }
 
   for (let i = 0; i < buckets.length; i++) {
-    if (buckets[i]) {
-      // use insertion sort, to sort each bucket
-      const sortedBucket = insertionSort(buckets[i]);
-      result.push(...sortedBucket);
-    }
+    const sortedBucket = insertionSort(buckets[i]);
+    result.push(...sortedBucket);
   }
 
   return result;

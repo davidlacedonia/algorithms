@@ -17,7 +17,7 @@ const swapAdjacentItems = (array, index) => {
  *
  * @param {array} array unsorted elements
  *
- * @returns {array} sorted elements
+ * @return {array} sorted elements
  */
 function bubbleSort(array = []) {
   if (!Array.isArray(array)) return [];

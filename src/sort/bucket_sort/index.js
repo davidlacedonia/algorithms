@@ -20,7 +20,7 @@ const storeInBuckets = (array, size) => {
  * @param {array} array unsorted elements
  * @param {number} LARGEST possible largest element / amount of elements
  *
- * @returns {array} sorted elements
+ * @return {array} sorted elements
  */
 function bucketSort(array = [], LARGEST = 10) {
   const size = LARGEST / array.length;

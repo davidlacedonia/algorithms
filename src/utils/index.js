@@ -5,14 +5,19 @@
  *
  * @param {number} limit Size of array
  * @param {number} max Max number
+ * @param {function} mapper Transforms every number
  *
- * @returns {array} Array of random numbers
+ * @return {array} Array of random numbers
  */
-export const randomNumbers = (limit, max = 10) => {
+export const randomNumbers = (limit, max = 10, mapper) => {
   let numbers = [];
 
   while (numbers.length < limit) {
-    numbers.push(Math.random() * max);
+    let number = Math.random() * max;
+    if (mapper) {
+      number = mapper(number);
+    }
+    numbers.push(number);
   }
 
   return numbers;

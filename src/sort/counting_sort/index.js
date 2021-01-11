@@ -1,17 +1,22 @@
 /**
- * Counting sort O(n + k).
+ * Counting sort O(n+k).
+ *
+ * Stores repetitions in array, using the value as index.
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
  *
  * @param {array} array unordered array
  *
  * @return {array} ordered array
  */
-function countingSort(array) {
+function countingSort(array = []) {
   let reps = [];
   let result = [];
+  if (!Array.isArray(array)) return [];
 
   // store repetitions in array (using the value as index)
   array.forEach((value) => {
-    reps[value] = reps[value] ? reps[value] + 1 : 1;
+    reps[value] = (reps[value] || 0) + 1;
   });
 
   // fill empty slots with 0

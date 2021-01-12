@@ -1,7 +1,37 @@
+const getReps = (array) => {
+  let reps = [];
+  array.forEach((value) => {
+    reps[value] = (reps[value] || 0) + 1;
+  });
+  return reps;
+};
+
+const accumulateReps = (reps) => {
+  const acc = [...reps];
+  for (let i = 1; i < acc.length; i++) {
+    acc[i] = (acc[i] || 0) + (acc[i - 1] || 0);
+  }
+  return acc;
+};
+
+const placeAccValuesAtRightIndex = (array, accumulatedReps) => {
+  let result = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    const value = array[i];
+    const index = accumulatedReps[value];
+    result[index] = value;
+    accumulatedReps[value] = accumulatedReps[value] - 1;
+  }
+  return result;
+};
+
 /**
  * Counting sort O(n+k).
  *
  * Stores repetitions in array, using the value as index.
+ * Every value represent the places in the count array.
+ * The accumulated reps of every value, represents the order,
+ * on the result sorted array.
  *
  * @author David Lacedonia <davidlacedonia@gmail.com>
  *
@@ -10,36 +40,12 @@
  * @return {array} ordered array
  */
 function countingSort(array = []) {
-  let reps = [];
-  let result = [];
   if (!Array.isArray(array)) return [];
 
-  // store repetitions in array (using the value as index)
-  array.forEach((value) => {
-    reps[value] = (reps[value] || 0) + 1;
-  });
-
-  // fill empty slots with 0
-  for (let i = 0; i < reps.length; i++) {
-    reps[i] = reps[i] || 0;
-  }
-
-  // accumulates repetitions
-  for (let i = 1; i < reps.length; i++) {
-    reps[i] = reps[i] + reps[i - 1];
-  }
-
-  // every value represent the places in the count array
-  for (let i = array.length - 1; i >= 0; i--) {
-    const value = array[i];
-    const index = reps[value];
-
-    // place the value in the correct position (acc count), and decrease the count by 1
-    result[index] = value;
-    reps[value] = reps[value] - 1;
-  }
-
-  return result.filter((i) => !!i);
+  const reps = getReps(array);
+  const accumulatedReps = accumulateReps(reps);
+  const sortedValues = placeAccValuesAtRightIndex(array, accumulatedReps);
+  return sortedValues.filter((i) => !!i);
 }
 
 export default countingSort;

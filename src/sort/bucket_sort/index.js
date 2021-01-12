@@ -1,8 +1,8 @@
-import insertionSort from "../insertion_sort";
+import insertionSort from '../insertion_sort';
 
 const storeInBuckets = (array, size) => {
-  let buckets = [];
-  for (let i = 0; i < array.length; i++) {
+  const buckets = [];
+  for (let i = 0; i < array.length; i += 1) {
     const bucketIndex = Math.floor(array[i] / size);
     buckets[bucketIndex] = [...(buckets[bucketIndex] || []), array[i]];
   }

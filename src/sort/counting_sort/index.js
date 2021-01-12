@@ -1,5 +1,5 @@
 const getReps = (array) => {
-  let reps = [];
+  const reps = [];
   array.forEach((value) => {
     reps[value] = (reps[value] || 0) + 1;
   });
@@ -8,19 +8,19 @@ const getReps = (array) => {
 
 const accumulateReps = (reps) => {
   const acc = [...reps];
-  for (let i = 1; i < acc.length; i++) {
+  for (let i = 1; i < acc.length; i += 1) {
     acc[i] = (acc[i] || 0) + (acc[i - 1] || 0);
   }
   return acc;
 };
 
 const placeAccValuesAtRightIndex = (array, accumulatedReps) => {
-  let result = [];
-  for (let i = array.length - 1; i >= 0; i--) {
+  const result = [];
+  for (let i = array.length - 1; i >= 0; i -= 1) {
     const value = array[i];
     const index = accumulatedReps[value];
     result[index] = value;
-    accumulatedReps[value] = accumulatedReps[value] - 1;
+    accumulatedReps[value] -= 1;
   }
   return result;
 };

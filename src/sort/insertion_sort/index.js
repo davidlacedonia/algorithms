@@ -1,22 +1,30 @@
 /**
  * Insertion sort O(n2).
  *
- * Loops every item, and for each of them, loops in reverse order.
+ * For every item, loops in reverse order.
  * If the (previous) element is greater than the actual value,
- * moves it one place to the right.
+ * it is moved one place to the right, and then the actual value,
+ * is placed at the right position.
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @param {array} unsortedArray
+ *
+ * @return {array} sorted array
  */
-function insertionSort(array = []) {
-  if (!Array.isArray(array)) return [];
+function insertionSort(unsortedArray = []) {
+  if (!Array.isArray(unsortedArray)) return [];
 
-  for (let i = 1; i < array.length; i++) {
+  const array = [...unsortedArray];
+  for (let i = 1; i < array.length; i += 1) {
     const value = array[i];
 
-    let j = i - 1;
-    while (j >= 0 && array[j] > value) {
-      array[j + 1] = array[j];
-      j--;
+    let prevIndex = i - 1;
+    while (prevIndex >= 0 && array[prevIndex] > value) {
+      array[prevIndex + 1] = array[prevIndex];
+      prevIndex -= 1;
     }
-    array[j + 1] = value;
+    array[prevIndex + 1] = value;
   }
   return array;
 }

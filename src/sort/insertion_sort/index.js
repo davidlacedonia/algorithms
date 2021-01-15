@@ -1,5 +1,5 @@
 /**
- * Insertion sort O(n2).
+ * Insertion sort O(n^2).
  *
  * For every item, loops in reverse order.
  * If the (previous) element is greater than the actual value,

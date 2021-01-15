@@ -21,9 +21,16 @@ const sortHalves = (left, right) => {
  *
  * Divide array in halves recursively,
  * sorting and merging left and right.
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @param {array} array unsorted numbers
+ *
+ * @return {array} sorted numbers
  */
-function mergeSort(array) {
+function mergeSort(array = []) {
   if (array.length < 2) return array;
+  if (!Array.isArray(array)) return [];
 
   const middle = Math.ceil(array.length / 2);
   const left = array.slice(0, middle);

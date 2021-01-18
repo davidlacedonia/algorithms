@@ -1,4 +1,8 @@
-function partition(array, min, max) {
+/**
+ * Sorts left of pivot (last element),
+ * and returns new pivot.
+ */
+function sortsByPivot(array, min, max) {
   const pivot = array[max];
   let i = min - 1;
 
@@ -22,12 +26,22 @@ function partition(array, min, max) {
  * Quick sort O(n log n).
  *
  * Cuts the array on half every time (using a pivot),
- * and orders the left part of the pivot, and positions the pivot
- * in the correct pisition
+ * brings pivot to right position, such that left is smaller,
+ * and right is greater than it.
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @param {array} array unsorted elements
+ * @param {number} min start of array
+ * @param {number} max end of array
+ *
+ * @return {array} sorted number
  */
-function quickSort(array, min, max) {
+function quickSort(array = [], min = 0, max = array.length - 1) {
+  if (!Array.isArray(array)) return [];
+
   if (min < max) {
-    const pivot = partition(array, min, max);
+    const pivot = sortsByPivot(array, min, max);
     quickSort(array, min, pivot - 1);
     quickSort(array, pivot + 1, max);
   }

@@ -1,11 +1,19 @@
 /**
- * Selection sort O(n2).
+ * Selection sort O(n^2).
  *
  * Loop through every element in the array,
  * and for each element, we iterate every element on the right.
  * If there is a lesser value, we swap them.
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @param {array} array unsorted elements
+ *
+ * @return {array} sorted elements
  */
-function selectionSort(array) {
+function selectionSort(array = []) {
+  if (!Array.isArray(array)) return [];
+
   for (let i = 0; i < array.length - 1; i++) {
     let indexMin = i;
 

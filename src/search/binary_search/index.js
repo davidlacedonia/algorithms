@@ -6,10 +6,20 @@
  * If the value is lesser, move the left index to pivot + 1
  * If the value is greater, move the right index to pivot - 1
  * Moving the left/right indexes, will reduce the search in halves.
+ *
+ * @author David Lacedonia <davidlacedonia@gmail.com>
+ *
+ * @param {array} array sorted numbers
+ * @param {number} target
+ *
+ * @return {number} index of target
+ *
  */
 function binarySearch(array, target) {
   let left = 0;
   let right = array.length - 1;
+
+  if (!Array.isArray(array)) return null;
 
   while (left <= right) {
     const pivot = Math.floor((right + left) / 2);

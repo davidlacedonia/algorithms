@@ -1,45 +1,48 @@
 /**
- * Calculates position with formula.
+ * Calculates position by assuming linearity.
  *
- * @param {object} arr Array of elements
- * @param {number} start Start index
- * @param {number} end End index
- * @param {number} el Element to be found
+ * @param {object} arr array of elements
+ * @param {number} start start index
+ * @param {number} end end index
+ * @param {number} el element to be found
  *
- * @return {number} New position
+ * @return {number} new position
  */
 function getPosition(arr, start, end, el) {
-  let a = start;
-  let b = end - start;
-  let c = arr[end] - arr[start];
-  let d = el - arr[start];
+  const a = start;
+  const b = end - start;
+  const c = arr[end] - arr[start];
+  const d = el - arr[start];
 
   return Math.floor(a + (b / c) * d);
 }
 
 /**
- * Interpolation search O(log log n).
+ * Interpolation search O(log (log n)).
  *
- * Checks on different locations (position),
+ * Checks on different locations using a formula,
  * based on the value of the element being searched.
  *
- * @param {object} array Array of elements
- * @param {number} element Element to be bound
+ * @author David Lacedonia <davidlacedonia@gmail.com>
  *
- * @return {number} Index of element
+ * @param {object} array array of elements
+ * @param {number} element element to be bound
+ *
+ * @return {number} index of element
  */
-function interpolationSearch(array, element) {
+function interpolationSearch(array = [], element) {
   let start = 0;
   let end = array.length - 1;
   let position = getPosition(array, start, end, element);
 
-  // repeats until we have elements in the subarray,
-  // element is greater than the one on the starting point
-  // and element is lesser than the one on end point
+  if (!Array.isArray(array)) return null;
+
   while (start <= end && element >= array[start] && element <= array[end]) {
     if (array[position] === element) {
       return position;
-    } else if (array[position] < element) {
+    }
+
+    if (array[position] < element) {
       start = position + 1;
     } else {
       end = position - 1;
@@ -48,7 +51,7 @@ function interpolationSearch(array, element) {
     position = getPosition(array, start, end, element);
   }
 
-  return -1;
+  return null;
 }
 
 export default interpolationSearch;

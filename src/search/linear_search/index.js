@@ -1,18 +1,22 @@
 /**
  * Linear search O(n).
  *
- * @param {Object} array Array of values
- * @param {number} element Element to search
+ * @author David Lacedonia <davidlacedonia@gmail.com>
  *
- * @return {number} Index of element
+ * @param {array} array sorted numbers
+ * @param {number} el element to search
+ *
+ * @return {number} index of element
  */
-function linearSearch(array, element) {
+function linearSearch(array = [], element) {
+  if (!Array.isArray(array) || !element) return null;
+
   for (let i = 0; i < array.length; i++) {
     if (array[i] === element) {
       return i;
     }
   }
-  return -1;
+  return null;
 }
 
 export default linearSearch;

@@ -8,11 +8,11 @@
  *
  * @return {number} index of element
  */
-function linearSearch(array = [], element) {
-  if (!Array.isArray(array) || !element) return null;
+function linearSearch(array = [], el) {
+  if (!Array.isArray(array) || !el) return null;
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === element) {
+    if (array[i] === el) {
       return i;
     }
   }

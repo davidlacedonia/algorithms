@@ -10,6 +10,8 @@
  * @returns {function} Curried function.
  */
 function curry(fn) {
+  if (typeof fn !== 'function') return null;
+
   return function curried(...args) {
     // if the amount of arguments, is greater or equal
     // we just call the original function

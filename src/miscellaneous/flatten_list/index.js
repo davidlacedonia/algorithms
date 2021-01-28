@@ -5,12 +5,14 @@
  *
  * @author David Lacedonia <davidlacedonia@gmail.com>
  *
- * @param {array} list Array of elements
+ * @param {array} list array of elements
  *
  * @returns {array} flattened array
  */
-function flattenList(list) {
+function flattenList(list = []) {
   let flattened = [];
+
+  if (!Array.isArray(list)) return null;
 
   for (let element of list) {
     if (Array.isArray(element)) {

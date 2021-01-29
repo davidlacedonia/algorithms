@@ -1,4 +1,4 @@
-const findLeastFrequentIndex = (values) => {
+const findLeastFrequentIndex = (values = []) => {
   let leastIndex = null;
   let leastFrequence = null;
 
@@ -12,7 +12,7 @@ const findLeastFrequentIndex = (values) => {
   return leastIndex;
 };
 
-const removeLeastFrequentUsed = (values) => {
+const removeLeastFrequentUsed = (values = []) => {
   const leastFrequentIndex = findLeastFrequentIndex(values);
   return values.splice(leastFrequentIndex, 1);
 };
@@ -35,9 +35,7 @@ function LFUCache(capacity = 1) {
     get: (value) => {
       const index = values.findIndex((item) => item.value === value);
 
-      if (index < 0) {
-        return index;
-      }
+      if (index < 0) return null;
 
       values[index].frequence += 1;
       return values[index].value;

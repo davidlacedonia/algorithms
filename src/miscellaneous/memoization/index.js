@@ -14,6 +14,8 @@
 function memoization(fn) {
   let cache = {};
 
+  if (typeof fn !== 'function') return null;
+
   return function () {
     const key = JSON.stringify(arguments);
 

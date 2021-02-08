@@ -1,8 +1,8 @@
-import BinaryTree from "./index";
-import preorderTraversal from "../../binary_tree/preorder_traversal";
-import { ORDERED_TREE } from "../../data";
+import BinaryTree from './index';
+import preorderTraversal from '../../binary_tree/preorder_traversal';
+import { ORDERED_TREE } from '../../data';
 
-test("Binary tree creation", () => {
+test('Binary tree creation', () => {
   const binaryTree = new BinaryTree();
   binaryTree.insert(1);
   binaryTree.insert(2);

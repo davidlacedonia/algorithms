@@ -10,9 +10,9 @@
  */
 function postorderTraversal(tree, acc = []) {
   if (tree) {
-    postorderTraversal(tree.left, acc);
-    postorderTraversal(tree.right, acc);
-    acc.push(tree.value);
+    postorderTraversal(tree.prev, acc);
+    postorderTraversal(tree.next, acc);
+    acc.push(tree.data);
   }
 
   return acc;

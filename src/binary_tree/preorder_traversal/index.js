@@ -10,9 +10,9 @@
  */
 function preorderTraversal(tree, acc = []) {
   if (tree) {
-    acc.push(tree.value);
-    preorderTraversal(tree.left, acc);
-    preorderTraversal(tree.right, acc);
+    acc.push(tree.data);
+    preorderTraversal(tree.prev, acc);
+    preorderTraversal(tree.next, acc);
   }
 
   return acc;

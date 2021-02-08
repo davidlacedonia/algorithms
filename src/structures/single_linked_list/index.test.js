@@ -1,4 +1,4 @@
-import SingleLinkedList from "./index";
+import SingleLinkedList from './index';
 
 const singleLinkedList = new SingleLinkedList();
 beforeAll(() => {
@@ -7,17 +7,11 @@ beforeAll(() => {
   singleLinkedList.appendToTail(45);
 });
 
-test("Append to tail", () => {
-  expect(singleLinkedList.get(34)).toEqual({
-    data: 34,
-    next: {
-      data: 45,
-      next: null,
-    },
-  });
+test('Append to tail', () => {
+  expect(singleLinkedList.get(34).next.data).toEqual(45);
 });
 
-test("Delete node", () => {
+test('Delete node', () => {
   singleLinkedList.deleteNode(34);
   expect(singleLinkedList.get(34)).toEqual(null);
 });

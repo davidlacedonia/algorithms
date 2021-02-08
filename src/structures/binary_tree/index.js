@@ -1,25 +1,19 @@
-function TreeNode(value) {
-  return {
-    value,
-    left: null,
-    right: null,
-  };
-}
+import Node from '../node';
 
 const findNodeToInsert = (root, node) => {
-  if (node.value === root.value) return undefined;
+  if (node.data === root.data) return undefined;
 
-  if (node.value > root.value) {
-    if (!root.right) {
-      root.right = node;
+  if (node.data > root.data) {
+    if (!root.next) {
+      root.next = node;
     } else {
-      findNodeToInsert(root.right, node);
+      findNodeToInsert(root.next, node);
     }
   } else {
-    if (!root.left) {
-      root.left = node;
+    if (!root.prev) {
+      root.prev = node;
     } else {
-      findNodeToInsert(root.left, node);
+      findNodeToInsert(root.prev, node);
     }
   }
 };
@@ -40,7 +34,7 @@ function BinaryTree() {
       return root;
     },
     insert(value) {
-      const node = new TreeNode(value);
+      const node = new Node(value);
 
       if (!root) {
         root = node;

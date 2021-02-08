@@ -10,9 +10,9 @@
  */
 function inorderTraversal(tree, acc = []) {
   if (tree) {
-    inorderTraversal(tree.left, acc);
-    acc.push(tree.value);
-    inorderTraversal(tree.right, acc);
+    inorderTraversal(tree.prev, acc);
+    acc.push(tree.data);
+    inorderTraversal(tree.next, acc);
   }
 
   return acc;

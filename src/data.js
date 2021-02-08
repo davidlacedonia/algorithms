@@ -3,15 +3,15 @@ export const ORDERED_ARRAY = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 export const LIST = [[1, [2, 3, [4], [5, 6, 7, [8, 9]], 10]], 11];
 export const FLATTENED_LIST = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 export const TREE = {
-  value: 1,
-  left: null,
-  right: {
-    value: 2,
-    left: {
-      value: 3,
-      right: null,
+  data: 1,
+  prev: null,
+  next: {
+    data: 2,
+    prev: {
+      data: 3,
+      next: null,
     },
-    right: null,
+    next: null,
   },
 };
 export const ORDERED_TREE = [1, 2, 3];

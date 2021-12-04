@@ -37,8 +37,6 @@ async function main() {
   const sequence = await readFile(file)
   let output
 
-  
-
   let oxygenSequence = []
   let co2Sequence = []
 
@@ -56,15 +54,10 @@ async function main() {
     }
   }
 
-  
-
   for (let i = 1; i < oxygen.length && oxygenSequence.length > 1; i++) {
     let { oxygen } = process(oxygenSequence)
     oxygenSequence = oxygenSequence.filter(s => s[i] === oxygen[i])
   }
-  
-  console.log(oxygenSequence)
-
 
   // find the most common number in the position
   // keep the numbers with the most common position
@@ -81,12 +74,8 @@ async function main() {
     co2Sequence = co2Sequence.filter(s => s[i] === co2[i])
   }
 
-
-  console.log(oxygenSequence, co2Sequence)
   // o2
   // keep only numbers with the least common bit in that position (if equal keep 0s)
-
-  console.log(parseInt(oxygenSequence[0], 2), parseInt(co2Sequence[0], 2))
   output = parseInt(oxygenSequence[0], 2) * parseInt(co2Sequence[0], 2)
   console.log(output)
   return output

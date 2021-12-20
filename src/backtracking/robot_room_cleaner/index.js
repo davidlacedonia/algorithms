@@ -20,18 +20,18 @@ var cleanRoom = function(robot) {
   const positions = [[-1, 0], [0, 1], [1, 0], [0, -1]]
   let visited = {}
   
-  const self = (x = 0, y = 0, d = 0) => {
+  const backtrack = (x = 0, y = 0, d = 0) => {
       robot.clean()
       visited = visit(robot, visited)
       
       for (let i = 0; i < 4; i++) {
-          const newD = (i + d) % 4
-          const [posX, posY] = positions[newD]
-          let newX = posX + x
-          let newY = posY + y
+          const _d = (i + d) % 4
+          const [row, col] = positions[_d]
+          let _x = row + x
+          let _y = col + y
           
-          if (!visited[newX + ':' + newY] && robot.move()) {
-              self(newX, newY, newD)
+          if (!visited[_x + ':' + _y] && robot.move()) {
+              backtrack(_x, _y, _d)
               goBack(robot)
           }
           
@@ -39,5 +39,5 @@ var cleanRoom = function(robot) {
       }
   }
   
-  self(robot.row, robot.col)
+  backtrack(robot.row, robot.col)
 };

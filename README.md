@@ -68,8 +68,6 @@
 
 ## Common problems
 
-[Backtracking](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/backtracking/index.js)
-
 [Fibonacci](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/fibonacci/index.js)
 
 [Factorial](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/factorial/index.js)

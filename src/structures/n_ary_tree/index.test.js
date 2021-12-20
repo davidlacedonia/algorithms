@@ -4,7 +4,6 @@ let codec
 
 beforeAll(() => {
   codec = new Codec()
-  console.log(codec)
 })
 
 test('Deserialize N ary Tree', () => {

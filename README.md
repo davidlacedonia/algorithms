@@ -73,3 +73,9 @@
 [Fibonacci](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/fibonacci/index.js)
 
 [Factorial](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/factorial/index.js)
+
+## Backtracking
+
+[N Queens](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/n_queens/index.js)
+
+[Robot room cleaner](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/robot_room_cleaner/index.js)

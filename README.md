@@ -48,6 +48,8 @@
 
 [Inorder traversal](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/inorder_traversal/index.js)
 
+[Serialization](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/serialize/index.js)
+
 ## Binary Search tree
 
 [Convert sorted array to BST](https://github.com/davidlacedonia/algorithms/blob/master/src/binary_search_tree/convert_sorted_array/index.js)

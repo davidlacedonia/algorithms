@@ -49,6 +49,37 @@ Trie.prototype.search = function(word) {
 };
 
 /**
+ * Word may contain dots '.' 
+ * where dots can be matched with any letter
+ * 
+ * @param {string} word
+ * @returns {boolean}
+ */
+Trie.prototype.complexSearch = function(word, curr = this.root) {
+  if (!word) return !!curr.isEnd
+  
+  let c = word[0]
+  if (c === '.') {
+      const _keys = Object.keys(curr)
+      if ((_keys[0] === 'isEnd' && _keys.length === 1) || !_keys.length) {
+        return false
+      }
+      for (let k of _keys.filter(k => k !== 'isEnd')) {
+          if (this.complexSearch(word.slice(1), curr[k])) {
+            return true
+          }
+      }
+      return false
+  } else {
+      if (!curr[c]) {
+          return false
+      } else {
+          return this.complexSearch(word.slice(1), curr[c])
+      }
+  }
+}
+
+/**
 * Returns if there is any word in the trie that starts with the given prefix. 
 * @param {string} prefix
 * @return {boolean}

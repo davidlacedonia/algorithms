@@ -66,7 +66,10 @@
 
 [Queue](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/queue/index.js)
 
+[Circular queue](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/circular_queue/index.js)
+
 [Binary heap](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/binary_heap/index.js)
+
 
 ## Common problems
 

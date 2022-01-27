@@ -82,3 +82,7 @@
 [N Queens](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/n_queens/index.js)
 
 [Robot room cleaner](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/robot_room_cleaner/index.js)
+
+## BFS
+
+[Number of islands](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/islands/index.js)

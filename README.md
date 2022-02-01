@@ -77,6 +77,8 @@
 
 [Factorial](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/factorial/index.js)
 
+[Valid parenthesis](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/valid_parenthesis/index.js)
+
 ## Backtracking
 
 [N Queens](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/n_queens/index.js)

@@ -92,3 +92,7 @@
 ## DFS
 
 [Clone graph](https://github.com/davidlacedonia/algorithms/tree/master/src/dfs/clone_graph/index.js)
+
+## Graph
+
+[Valid graph tree](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/graph_valid_tree/index.js)

@@ -70,6 +70,8 @@
 
 [Binary heap](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/binary_heap/index.js)
 
+[Union find](https://github.com/davidlacedonia/algorithms/blob/master/src/structures/union_find/index.js)
+
 
 ## Common problems
 
@@ -100,3 +102,5 @@
 [DFS - Find path](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/dfs/find_path/index.js)
 
 [DFS - All paths](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/dfs/all_paths/index.js)
+
+[MST - min cost](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/mst/index.js)

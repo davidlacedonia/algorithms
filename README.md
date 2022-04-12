@@ -81,6 +81,8 @@
 
 [Valid parenthesis](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/valid_parenthesis/index.js)
 
+[Dijkstra min path](https://github.com/davidlacedonia/algorithms/blob/master/src/common_problems/dijkstra_min_path/index.js)
+
 ## Backtracking
 
 [N Queens](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/n_queens/index.js)

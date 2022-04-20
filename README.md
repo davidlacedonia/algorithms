@@ -106,3 +106,5 @@
 [DFS - All paths](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/dfs/all_paths/index.js)
 
 [MST - min cost](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/mst/index.js)
+
+[SPFA - shortest path](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/spfa/index.js)

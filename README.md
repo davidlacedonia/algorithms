@@ -50,9 +50,9 @@
 
 [Serialization](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/serialize/index.js)
 
-[Invert tree](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/invert/index.js)
+[Invert tree](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/invert/invert.js)
 
-[Sum root to leaf](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/sumRootToLeaf/index.js)
+[Sum root to leaf](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/sumRootToLeaf/sumRootToLeaf.js)
 
 ## Binary Search tree
 

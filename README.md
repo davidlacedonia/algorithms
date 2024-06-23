@@ -50,6 +50,10 @@
 
 [Serialization](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/serialize/index.js)
 
+[Invert tree](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/invert/index.js)
+
+[Sum root to leaf](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/sumRootToLeaf/index.js)
+
 ## Binary Search tree
 
 [Convert sorted array to BST](https://github.com/davidlacedonia/algorithms/blob/master/src/binary_search_tree/convert_sorted_array/index.js)
@@ -71,7 +75,6 @@
 [Binary heap](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/binary_heap/index.js)
 
 [Union find](https://github.com/davidlacedonia/algorithms/blob/master/src/structures/union_find/index.js)
-
 
 ## Common problems
 
@@ -108,3 +111,7 @@
 [MST - min cost](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/mst/index.js)
 
 [SPFA - shortest path](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/spfa/index.js)
+
+## Matrix
+
+[Valid sudoku](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/challenges/validSudoku/index.js)

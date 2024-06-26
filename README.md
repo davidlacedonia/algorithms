@@ -119,3 +119,7 @@
 ## Bit manipulation
 
 [Single number](https://github.com/davidlacedonia/algorithms/blob/master/src/bit_manipulation/singleNumber/index.js)
+
+## Hashmap
+
+[Ransom note](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/ransomNote/index.js)

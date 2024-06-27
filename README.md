@@ -96,6 +96,8 @@
 
 [Number of islands](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/islands/index.js)
 
+[Average of levels](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/averageOfLevels/index.js)
+
 ## DFS
 
 [Clone graph](https://github.com/davidlacedonia/algorithms/tree/master/src/dfs/clone_graph/index.js)

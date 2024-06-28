@@ -125,3 +125,7 @@
 ## Hashmap
 
 [Ransom note](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/ransomNote/index.js)
+
+## Two pointers
+
+[Is subsequence](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isSubsequence/index.js)

@@ -125,6 +125,7 @@
 ## Hashmap
 
 [Ransom note](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/ransomNote/index.js)
+[Is isomorphic](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/isIsomorphic/index.js)
 
 ## Two pointers
 

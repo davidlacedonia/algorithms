@@ -128,6 +128,8 @@
 
 [Is isomorphic](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/isIsomorphic/index.js)
 
+[Group anagrams](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/groupAnagrams/index.js)
+
 ## Two pointers
 
 [Is subsequence](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isSubsequence/index.js)

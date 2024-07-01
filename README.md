@@ -134,4 +134,4 @@
 
 [Is subsequence](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isSubsequence/index.js)
 
-[Is palindrome](https://guthub.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isPalindrome/index.js)
+[Is palindrome](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isPalindrome/index.js)

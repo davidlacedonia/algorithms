@@ -135,3 +135,7 @@
 [Is subsequence](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isSubsequence/index.js)
 
 [Is palindrome](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isPalindrome/index.js)
+
+## Linked list
+
+[Has cycle](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/hasCycle/index.js)

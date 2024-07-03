@@ -130,6 +130,8 @@
 
 [Group anagrams](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/groupAnagrams/index.js)
 
+[Word pattern](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/wordPattern/index.js)
+
 ## Two pointers
 
 [Is subsequence](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isSubsequence/index.js)

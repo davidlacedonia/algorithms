@@ -10,5 +10,3 @@ export function groupAnagrams(strs) {
 
     return Object.values(map);
 }
-
-console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']));

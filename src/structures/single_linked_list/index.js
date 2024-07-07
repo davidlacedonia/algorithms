@@ -1,4 +1,4 @@
-import Node from "../node";
+import Node from '../node';
 
 /**
  * Single linked list.
@@ -8,52 +8,52 @@ import Node from "../node";
  * @returns {object} get, appendToTail and deleteNode methods.
  */
 function SingleLinkedList() {
-  let head = null;
+    let head = null;
 
-  return {
-    get(value) {
-      let current = head;
-      if (current.data === value) return current;
+    return {
+        get(value) {
+            let current = head;
+            if (current.data === value) return current;
 
-      while (current.next) {
-        if (current.data === value) {
-          return current;
-        }
-        current = current.next;
-      }
+            while (current.next) {
+                if (current.data === value) {
+                    return current;
+                }
+                current = current.next;
+            }
 
-      return null;
-    },
-    appendToTail(value) {
-      const node = new Node(value);
+            return null;
+        },
+        appendToTail(value) {
+            const node = new Node(value);
 
-      if (!head) {
-        head = node;
-        return value;
-      }
+            if (!head) {
+                head = node;
+                return value;
+            }
 
-      let current = head;
-      while (current.next) {
-        current = current.next;
-      }
+            let current = head;
+            while (current.next) {
+                current = current.next;
+            }
 
-      current.next = node;
-      return value;
-    },
-    deleteNode(value) {
-      let current = head;
+            current.next = node;
+            return value;
+        },
+        deleteNode(value) {
+            let current = head;
 
-      while (current.next) {
-        if (current.next && current.next.data === value) {
-          current.next = current.next.next;
-          return null;
-        }
-        current = current.next;
-      }
+            while (current.next) {
+                if (current.next && current.next.data === value) {
+                    current.next = current.next.next;
+                    return null;
+                }
+                current = current.next;
+            }
 
-      return null;
-    },
-  };
+            return null;
+        },
+    };
 }
 
 export default SingleLinkedList;

@@ -9,14 +9,14 @@
  * @return {number} index of element
  */
 function linearSearch(array = [], el) {
-  if (!Array.isArray(array) || !el) return null;
+    if (!Array.isArray(array) || !el) return null;
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === el) {
-      return i;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === el) {
+            return i;
+        }
     }
-  }
-  return null;
+    return null;
 }
 
 export default linearSearch;

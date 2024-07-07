@@ -9,13 +9,13 @@
  * @return {array} Traversed array
  */
 function inorderTraversal(tree, acc = []) {
-  if (tree) {
-    inorderTraversal(tree.prev, acc);
-    acc.push(tree.data);
-    inorderTraversal(tree.next, acc);
-  }
+    if (tree) {
+        inorderTraversal(tree.prev, acc);
+        acc.push(tree.data);
+        inorderTraversal(tree.next, acc);
+    }
 
-  return acc;
+    return acc;
 }
 
 export default inorderTraversal;

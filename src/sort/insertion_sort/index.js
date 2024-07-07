@@ -13,20 +13,20 @@
  * @return {array} sorted array
  */
 function insertionSort(unsortedArray = []) {
-  if (!Array.isArray(unsortedArray)) return [];
+    if (!Array.isArray(unsortedArray)) return [];
 
-  const array = [...unsortedArray];
-  for (let i = 1; i < array.length; i += 1) {
-    const value = array[i];
+    const array = [...unsortedArray];
+    for (let i = 1; i < array.length; i += 1) {
+        const value = array[i];
 
-    let prevIndex = i - 1;
-    while (prevIndex >= 0 && array[prevIndex] > value) {
-      array[prevIndex + 1] = array[prevIndex];
-      prevIndex -= 1;
+        let prevIndex = i - 1;
+        while (prevIndex >= 0 && array[prevIndex] > value) {
+            array[prevIndex + 1] = array[prevIndex];
+            prevIndex -= 1;
+        }
+        array[prevIndex + 1] = value;
     }
-    array[prevIndex + 1] = value;
-  }
-  return array;
+    return array;
 }
 
 export default insertionSort;

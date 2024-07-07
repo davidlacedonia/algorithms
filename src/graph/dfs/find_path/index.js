@@ -11,33 +11,33 @@
  * @return {boolean}
  */
 var validPath = function (n, edges, source, destination) {
-  let visited = {};
-  let graph = [];
-  let stack = [];
+    let visited = {};
+    let graph = [];
+    let stack = [];
 
-  for (let edge of edges) {
-    const [x, y] = edge;
-    graph[x] = [...(graph[x] || []), y];
-    graph[y] = [...(graph[y] || []), x];
-  }
-
-  stack.push(source);
-  visited[source] = true;
-
-  while (stack.length) {
-    let current = stack.pop();
-
-    if (current === destination) return true;
-
-    for (let neighbour of graph[current]) {
-      if (!visited[neighbour]) {
-        visited[current] = true;
-        stack.push(neighbour);
-      }
+    for (let edge of edges) {
+        const [x, y] = edge;
+        graph[x] = [...(graph[x] || []), y];
+        graph[y] = [...(graph[y] || []), x];
     }
-  }
 
-  return false;
+    stack.push(source);
+    visited[source] = true;
+
+    while (stack.length) {
+        let current = stack.pop();
+
+        if (current === destination) return true;
+
+        for (let neighbour of graph[current]) {
+            if (!visited[neighbour]) {
+                visited[current] = true;
+                stack.push(neighbour);
+            }
+        }
+    }
+
+    return false;
 };
 
 export default validPath;

@@ -1,28 +1,28 @@
 const getReps = (array) => {
-  const reps = [];
-  array.forEach((value) => {
-    reps[value] = (reps[value] || 0) + 1;
-  });
-  return reps;
+    const reps = [];
+    array.forEach((value) => {
+        reps[value] = (reps[value] || 0) + 1;
+    });
+    return reps;
 };
 
 const accumulateReps = (reps) => {
-  const acc = [...reps];
-  for (let i = 1; i < acc.length; i += 1) {
-    acc[i] = (acc[i] || 0) + (acc[i - 1] || 0);
-  }
-  return acc;
+    const acc = [...reps];
+    for (let i = 1; i < acc.length; i += 1) {
+        acc[i] = (acc[i] || 0) + (acc[i - 1] || 0);
+    }
+    return acc;
 };
 
 const placeAccValuesAtRightIndex = (array, accumulatedReps) => {
-  const result = [];
-  for (let i = array.length - 1; i >= 0; i -= 1) {
-    const value = array[i];
-    const index = accumulatedReps[value];
-    result[index] = value;
-    accumulatedReps[value] -= 1;
-  }
-  return result;
+    const result = [];
+    for (let i = array.length - 1; i >= 0; i -= 1) {
+        const value = array[i];
+        const index = accumulatedReps[value];
+        result[index] = value;
+        accumulatedReps[value] -= 1;
+    }
+    return result;
 };
 
 /**
@@ -40,12 +40,12 @@ const placeAccValuesAtRightIndex = (array, accumulatedReps) => {
  * @return {array} ordered array
  */
 function countingSort(array = []) {
-  if (!Array.isArray(array)) return [];
+    if (!Array.isArray(array)) return [];
 
-  const reps = getReps(array);
-  const accumulatedReps = accumulateReps(reps);
-  const sortedValues = placeAccValuesAtRightIndex(array, accumulatedReps);
-  return sortedValues.filter((i) => !!i);
+    const reps = getReps(array);
+    const accumulatedReps = accumulateReps(reps);
+    const sortedValues = placeAccValuesAtRightIndex(array, accumulatedReps);
+    return sortedValues.filter((i) => !!i);
 }
 
 export default countingSort;

@@ -9,13 +9,13 @@
  * @return {array} Traversed array
  */
 function postorderTraversal(tree, acc = []) {
-  if (tree) {
-    postorderTraversal(tree.prev, acc);
-    postorderTraversal(tree.next, acc);
-    acc.push(tree.data);
-  }
+    if (tree) {
+        postorderTraversal(tree.prev, acc);
+        postorderTraversal(tree.next, acc);
+        acc.push(tree.data);
+    }
 
-  return acc;
+    return acc;
 }
 
 export default postorderTraversal;

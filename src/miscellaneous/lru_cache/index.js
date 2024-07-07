@@ -10,32 +10,32 @@
  * @return {object} get and put LRU methods
  */
 function LRUCache(capacity) {
-  let values = new Array(capacity);
+    let values = new Array(capacity);
 
-  return {
-    get(value) {
-      const found = values.find((item) => item === value);
+    return {
+        get(value) {
+            const found = values.find((item) => item === value);
 
-      if (found) {
-        values = values.filter((v) => v !== found);
-        values.push(value);
-      }
+            if (found) {
+                values = values.filter((v) => v !== found);
+                values.push(value);
+            }
 
-      return found || -1;
-    },
+            return found || -1;
+        },
 
-    put(value) {
-      if (values.length >= capacity) {
-        if (values.find((item) => item === value)) {
-          values = values?.filter((v) => v !== value);
-        } else {
-          values.splice(0, 1);
-        }
-      }
+        put(value) {
+            if (values.length >= capacity) {
+                if (values.find((item) => item === value)) {
+                    values = values?.filter((v) => v !== value);
+                } else {
+                    values.splice(0, 1);
+                }
+            }
 
-      values.push(value);
-    },
-  };
+            values.push(value);
+        },
+    };
 }
 
 export default LRUCache;

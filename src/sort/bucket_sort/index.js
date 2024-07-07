@@ -1,12 +1,12 @@
 import insertionSort from '../insertion_sort';
 
 const storeInBuckets = (array, size) => {
-  const buckets = [];
-  for (let i = 0; i < array.length; i += 1) {
-    const bucketIndex = Math.floor(array[i] / size);
-    buckets[bucketIndex] = [...(buckets[bucketIndex] || []), array[i]];
-  }
-  return buckets;
+    const buckets = [];
+    for (let i = 0; i < array.length; i += 1) {
+        const bucketIndex = Math.floor(array[i] / size);
+        buckets[bucketIndex] = [...(buckets[bucketIndex] || []), array[i]];
+    }
+    return buckets;
 };
 
 /**
@@ -23,13 +23,13 @@ const storeInBuckets = (array, size) => {
  * @return {array} sorted elements
  */
 function bucketSort(array = [], LARGEST = 10) {
-  const size = LARGEST / array.length;
+    const size = LARGEST / array.length;
 
-  if (!Array.isArray(array)) return [];
+    if (!Array.isArray(array)) return [];
 
-  const buckets = storeInBuckets(array, size);
-  const sortedBuckets = buckets?.map((bucket) => insertionSort(bucket));
-  return sortedBuckets?.reduce((prev, next) => [...prev, ...next]);
+    const buckets = storeInBuckets(array, size);
+    const sortedBuckets = buckets?.map((bucket) => insertionSort(bucket));
+    return sortedBuckets?.reduce((prev, next) => [...prev, ...next]);
 }
 
 export default bucketSort;

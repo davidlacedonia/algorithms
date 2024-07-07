@@ -3,23 +3,23 @@
  * and returns new pivot.
  */
 function sortsByPivot(array, min, max) {
-  const pivot = array[max];
-  let i = min - 1;
+    const pivot = array[max];
+    let i = min - 1;
 
-  for (let j = min; j <= max - 1; j++) {
-    if (array[j] <= pivot) {
-      i++;
-      let aux = array[i];
-      array[i] = array[j];
-      array[j] = aux;
+    for (let j = min; j <= max - 1; j++) {
+        if (array[j] <= pivot) {
+            i++;
+            let aux = array[i];
+            array[i] = array[j];
+            array[j] = aux;
+        }
     }
-  }
 
-  let aux = array[i + 1];
-  array[i + 1] = array[max];
-  array[max] = aux;
+    let aux = array[i + 1];
+    array[i + 1] = array[max];
+    array[max] = aux;
 
-  return i + 1;
+    return i + 1;
 }
 
 /**
@@ -38,15 +38,15 @@ function sortsByPivot(array, min, max) {
  * @return {array} sorted number
  */
 function quickSort(array = [], min = 0, max = array.length - 1) {
-  if (!Array.isArray(array)) return [];
+    if (!Array.isArray(array)) return [];
 
-  if (min < max) {
-    const pivot = sortsByPivot(array, min, max);
-    quickSort(array, min, pivot - 1);
-    quickSort(array, pivot + 1, max);
-  }
+    if (min < max) {
+        const pivot = sortsByPivot(array, min, max);
+        quickSort(array, min, pivot - 1);
+        quickSort(array, pivot + 1, max);
+    }
 
-  return array;
+    return array;
 }
 
 export default quickSort;

@@ -9,11 +9,11 @@
  * @returns {number} fibinacci number
  */
 export function memoFibonacci(i, cache = []) {
-  if (i === 0 || i === 1) return i;
-  if (!cache[i]) {
-    cache[i] = memoFibonacci(i - 1, cache) + memoFibonacci(i - 2, cache);
-  }
-  return cache[i];
+    if (i === 0 || i === 1) return i;
+    if (!cache[i]) {
+        cache[i] = memoFibonacci(i - 1, cache) + memoFibonacci(i - 2, cache);
+    }
+    return cache[i];
 }
 
 /**
@@ -26,8 +26,8 @@ export function memoFibonacci(i, cache = []) {
  * * @returns {number} fibinacci number
  */
 function fibonacci(i) {
-  if (i === 0 || i === 1) return i;
-  return fibonacci(i - 1) + fibonacci(i - 2);
+    if (i === 0 || i === 1) return i;
+    return fibonacci(i - 1) + fibonacci(i - 2);
 }
 
 export default fibonacci;

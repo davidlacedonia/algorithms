@@ -1,8 +1,8 @@
 const swapAdjacentItems = (array, index) => {
-  const aux = array[index + 1];
-  array[index + 1] = array[index];
-  array[index] = aux;
-  return array;
+    const aux = array[index + 1];
+    array[index + 1] = array[index];
+    array[index] = aux;
+    return array;
 };
 
 /**
@@ -20,17 +20,17 @@ const swapAdjacentItems = (array, index) => {
  * @return {array} sorted elements
  */
 function bubbleSort(array = []) {
-  if (!Array.isArray(array)) return [];
+    if (!Array.isArray(array)) return [];
 
-  for (let j = 0; j < array.length; j += 1) {
-    for (let i = 0; i < array.length - j; i += 1) {
-      if (array[i] > array[i + 1]) {
-        array = swapAdjacentItems(array, i);
-      }
+    for (let j = 0; j < array.length; j += 1) {
+        for (let i = 0; i < array.length - j; i += 1) {
+            if (array[i] > array[i + 1]) {
+                array = swapAdjacentItems(array, i);
+            }
+        }
     }
-  }
 
-  return array;
+    return array;
 }
 
 export default bubbleSort;

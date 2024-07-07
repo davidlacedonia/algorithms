@@ -16,26 +16,26 @@
  *
  */
 function binarySearch(array, target) {
-  let left = 0;
-  let right = array.length - 1;
+    let left = 0;
+    let right = array.length - 1;
 
-  if (!Array.isArray(array)) return null;
+    if (!Array.isArray(array)) return null;
 
-  while (left <= right) {
-    const pivot = Math.floor((right + left) / 2);
+    while (left <= right) {
+        const pivot = Math.floor((right + left) / 2);
 
-    if (array[pivot] === target) {
-      return pivot;
+        if (array[pivot] === target) {
+            return pivot;
+        }
+        if (array[pivot] < target) {
+            left = pivot + 1;
+        }
+        if (array[pivot] > target) {
+            right = pivot - 1;
+        }
     }
-    if (array[pivot] < target) {
-      left = pivot + 1;
-    }
-    if (array[pivot] > target) {
-      right = pivot - 1;
-    }
-  }
 
-  return null;
+    return null;
 }
 
 export default binarySearch;

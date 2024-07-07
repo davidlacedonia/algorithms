@@ -1,19 +1,19 @@
 const sortHalves = (left, right) => {
-  let sorted = [];
-  let i = 0;
-  let j = 0;
+    let sorted = [];
+    let i = 0;
+    let j = 0;
 
-  while (i < left.length || j < right.length) {
-    if (left[i] <= right[j] || !right[j]) {
-      sorted.push(left[i]);
-      i++;
-    } else {
-      sorted.push(right[j]);
-      j++;
+    while (i < left.length || j < right.length) {
+        if (left[i] <= right[j] || !right[j]) {
+            sorted.push(left[i]);
+            i++;
+        } else {
+            sorted.push(right[j]);
+            j++;
+        }
     }
-  }
 
-  return sorted;
+    return sorted;
 };
 
 /**
@@ -29,14 +29,14 @@ const sortHalves = (left, right) => {
  * @return {array} sorted numbers
  */
 function mergeSort(array = []) {
-  if (array.length < 2) return array;
-  if (!Array.isArray(array)) return [];
+    if (array.length < 2) return array;
+    if (!Array.isArray(array)) return [];
 
-  const middle = Math.ceil(array.length / 2);
-  const left = array.slice(0, middle);
-  const right = array.slice(middle, array.length);
+    const middle = Math.ceil(array.length / 2);
+    const left = array.slice(0, middle);
+    const right = array.slice(middle, array.length);
 
-  return sortHalves(mergeSort(left), mergeSort(right));
+    return sortHalves(mergeSort(left), mergeSort(right));
 }
 
 export default mergeSort;

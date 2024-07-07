@@ -12,20 +12,20 @@
  * @returns {function} Memoized function
  */
 function memoization(fn) {
-  let cache = {};
+    let cache = {};
 
-  if (typeof fn !== 'function') return null;
+    if (typeof fn !== 'function') return null;
 
-  return function () {
-    const key = JSON.stringify(arguments);
+    return function () {
+        const key = JSON.stringify(arguments);
 
-    if (cache[key]) {
-      return cache[key];
-    } else {
-      cache[key] = fn.apply(null, arguments);
-      return cache[key];
-    }
-  };
+        if (cache[key]) {
+            return cache[key];
+        } else {
+            cache[key] = fn.apply(null, arguments);
+            return cache[key];
+        }
+    };
 }
 
 export default memoization;

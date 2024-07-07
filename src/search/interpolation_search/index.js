@@ -9,12 +9,12 @@
  * @return {number} new position
  */
 function getPosition(arr, start, end, el) {
-  const a = start;
-  const b = end - start;
-  const c = arr[end] - arr[start];
-  const d = el - arr[start];
+    const a = start;
+    const b = end - start;
+    const c = arr[end] - arr[start];
+    const d = el - arr[start];
 
-  return Math.floor(a + (b / c) * d);
+    return Math.floor(a + (b / c) * d);
 }
 
 /**
@@ -31,27 +31,27 @@ function getPosition(arr, start, end, el) {
  * @return {number} index of element
  */
 function interpolationSearch(array = [], element) {
-  let start = 0;
-  let end = array.length - 1;
-  let position = getPosition(array, start, end, element);
+    let start = 0;
+    let end = array.length - 1;
+    let position = getPosition(array, start, end, element);
 
-  if (!Array.isArray(array)) return null;
+    if (!Array.isArray(array)) return null;
 
-  while (start <= end && element >= array[start] && element <= array[end]) {
-    if (array[position] === element) {
-      return position;
+    while (start <= end && element >= array[start] && element <= array[end]) {
+        if (array[position] === element) {
+            return position;
+        }
+
+        if (array[position] < element) {
+            start = position + 1;
+        } else {
+            end = position - 1;
+        }
+
+        position = getPosition(array, start, end, element);
     }
 
-    if (array[position] < element) {
-      start = position + 1;
-    } else {
-      end = position - 1;
-    }
-
-    position = getPosition(array, start, end, element);
-  }
-
-  return null;
+    return null;
 }
 
 export default interpolationSearch;

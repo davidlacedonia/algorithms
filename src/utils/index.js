@@ -10,15 +10,15 @@
  * @return {array} Array of random numbers
  */
 export const randomNumbers = (limit, max = 10, mapper) => {
-  let numbers = [];
+    let numbers = [];
 
-  while (numbers.length < limit) {
-    let number = Math.random() * max;
-    if (mapper) {
-      number = mapper(number);
+    while (numbers.length < limit) {
+        let number = Math.random() * max;
+        if (mapper) {
+            number = mapper(number);
+        }
+        numbers.push(number);
     }
-    numbers.push(number);
-  }
 
-  return numbers;
+    return numbers;
 };

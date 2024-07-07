@@ -1,10 +1,10 @@
-const OPENING = ['(', '[', '{']
+const OPENING = ['(', '[', '{'];
 
 const MATCH = {
     ')': '(',
     ']': '[',
     '}': '{',
-}
+};
 
 /**
  * @param {string} str parenthesis
@@ -15,20 +15,20 @@ const MATCH = {
  *
  * @author David Lacedonia <davidlacedonia@gmail.com>
  */
- function isValid(str) {
-    let stack = []
-    
+function isValid(str) {
+    let stack = [];
+
     for (let c of str.split('')) {
         if (OPENING.includes(c)) {
-            stack.push(c)
+            stack.push(c);
         } else {
             if (stack.pop() !== MATCH[c]) {
-                return false
+                return false;
             }
         }
     }
-    
-    return !stack.length
+
+    return !stack.length;
 }
 
-export default isValid
+export default isValid;

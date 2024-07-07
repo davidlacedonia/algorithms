@@ -10,19 +10,19 @@
  * @returns {array} flattened array
  */
 function flattenList(list = []) {
-  let flattened = [];
+    let flattened = [];
 
-  if (!Array.isArray(list)) return null;
+    if (!Array.isArray(list)) return null;
 
-  for (let element of list) {
-    if (Array.isArray(element)) {
-      flattened.push(...flattenList(element));
-    } else {
-      flattened.push(element);
+    for (let element of list) {
+        if (Array.isArray(element)) {
+            flattened.push(...flattenList(element));
+        } else {
+            flattened.push(element);
+        }
     }
-  }
 
-  return flattened;
+    return flattened;
 }
 
 export default flattenList;

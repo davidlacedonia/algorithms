@@ -1,4 +1,4 @@
-import Node from "../node";
+import Node from '../node';
 
 /**
  * Stack.
@@ -8,28 +8,28 @@ import Node from "../node";
  * @author David Lacedonia <davidlacedonia@gmail.com>
  */
 function Stack() {
-  let top = null;
+    let top = null;
 
-  return {
-    push: (value) => {
-      const node = new Node(value);
-      node.next = top;
-      top = node;
-    },
-    pop: () => {
-      if (!top) return null;
-      let data = top.data;
-      top = top.next;
-      return data;
-    },
-    peek: () => {
-      if (!top) return null;
-      return top.data;
-    },
-    isEmpty: () => {
-      return !top;
-    },
-  };
+    return {
+        push: (value) => {
+            const node = new Node(value);
+            node.next = top;
+            top = node;
+        },
+        pop: () => {
+            if (!top) return null;
+            let data = top.data;
+            top = top.next;
+            return data;
+        },
+        peek: () => {
+            if (!top) return null;
+            return top.data;
+        },
+        isEmpty: () => {
+            return !top;
+        },
+    };
 }
 
 export default Stack;

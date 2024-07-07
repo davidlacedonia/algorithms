@@ -1,21 +1,21 @@
 export function levelOrder(root) {
-  const queue = [root];
-  const levels = [];
+    const queue = [root];
+    const levels = [];
 
-  while (queue.length) {
-    const length = queue.length;
-    const level = [];
+    while (queue.length) {
+        const length = queue.length;
+        const level = [];
 
-    for (let i = 0; i < length; i++) {
-      const node = queue.shift();
-      level.push(node.val);
+        for (let i = 0; i < length; i++) {
+            const node = queue.shift();
+            level.push(node.val);
 
-      if (node.left) queue.push(node.left);
-      if (node.right) queue.push(node.right);
+            if (node.left) queue.push(node.left);
+            if (node.right) queue.push(node.right);
+        }
+
+        levels.push(level);
     }
 
-    levels.push(level);
-  }
-
-  return levels;
+    return levels;
 }

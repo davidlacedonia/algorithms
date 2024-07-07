@@ -54,6 +54,8 @@
 
 [Sum root to leaf](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/sumRootToLeaf/sumRootToLeaf.js)
 
+[Is symmetric](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/isSymmetric/index.js)
+
 ## Binary Search tree
 
 [Convert sorted array to BST](https://github.com/davidlacedonia/algorithms/blob/master/src/binary_search_tree/convert_sorted_array/index.js)

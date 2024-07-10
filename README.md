@@ -136,6 +136,8 @@
 
 [Word pattern](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/wordPattern/index.js)
 
+[Is anagram](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/isAnagram/index.js)
+
 ## Two pointers
 
 [Is subsequence](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isSubsequence/index.js)

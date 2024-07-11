@@ -28,6 +28,10 @@
 
 [Interpolation search](https://github.com/davidlacedonia/algorithms/tree/master/src/search/interpolation_search/index.js)
 
+## Binary Search
+
+[Search insert](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_search/searchInsert/index.js)
+
 ## Miscellaneous
 
 [Flatten list](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/flatten_list/index.js)

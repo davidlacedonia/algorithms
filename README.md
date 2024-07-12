@@ -126,6 +126,8 @@
 
 [Valid sudoku](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/challenges/validSudoku/index.js)
 
+[Spiral matrix](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/spiralMatrix/index.js)
+
 ## Bit manipulation
 
 [Single number](https://github.com/davidlacedonia/algorithms/blob/master/src/bit_manipulation/singleNumber/index.js)

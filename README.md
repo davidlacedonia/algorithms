@@ -161,3 +161,7 @@
 ## Intervals
 
 [Summary ranges](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/summaryRanges/index.js)
+
+## Stack
+
+[Simplify path](https://github.com/davidlacedonia/algorithms/blob/master/src/stack/simplifyPath/index.js)

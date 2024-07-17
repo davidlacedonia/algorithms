@@ -167,3 +167,5 @@
 ## Stack
 
 [Simplify path](https://github.com/davidlacedonia/algorithms/blob/master/src/stack/simplifyPath/index.js)
+
+[Valid parenthesis](https://github.com/davidlacedonia/algorithms/blob/master/src/stack/valid_parenthesis/index.js)

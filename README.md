@@ -62,6 +62,8 @@
 
 [Build tree from preorder and inorder](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/build_tree/preorder_and_inorder/index.js)
 
+[Count nodes](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/countNodes/index.js)
+
 ## Binary Search tree
 
 [Convert sorted array to BST](https://github.com/davidlacedonia/algorithms/blob/master/src/binary_search_tree/convert_sorted_array/index.js)

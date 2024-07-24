@@ -54,9 +54,9 @@
 
 [Serialization](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/serialize/index.js)
 
-[Invert tree](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/invert/invert.js)
+[Invert tree](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/invert/invert.js)
 
-[Sum root to leaf](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/challenges/sumRootToLeaf/sumRootToLeaf.js)
+[Sum root to leaf](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/sumRootToLeaf/sumRootToLeaf.js)
 
 [Is symmetric](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/isSymmetric/index.js)
 
@@ -128,7 +128,7 @@
 
 ## Matrix
 
-[Valid sudoku](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/challenges/validSudoku/index.js)
+[Valid sudoku](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/validSudoku/index.js)
 
 [Spiral matrix](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/spiralMatrix/index.js)
 

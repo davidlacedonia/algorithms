@@ -156,6 +156,8 @@
 
 [Is happy](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/isHappy/index.js)
 
+[Contains nearby duplicate](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/containsNearbyDuplicate/index.js)
+
 ## Two pointers
 
 [Is subsequence](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/isSubsequence/index.js)

@@ -70,6 +70,8 @@
 
 [Get minimum difference](https://github.com/davidlacedonia/algorithms/blob/master/src/binary_search_tree/getMinimumDifference/index.js)
 
+[Sorted array to BST](https://github.com/davidlacedonia/algorithms/blob/master/src/binary_search_tree/sortedArrayToBST/index.js)
+
 ## Structures
 
 [Binary tree](https://github.com/davidlacedonia/algorithms/tree/master/src/structures/binary_tree/index.js)

@@ -185,3 +185,7 @@
 [Simplify path](https://github.com/davidlacedonia/algorithms/blob/master/src/stack/simplifyPath/index.js)
 
 [Valid parenthesis](https://github.com/davidlacedonia/algorithms/blob/master/src/stack/valid_parenthesis/index.js)
+
+## Math
+
+[Is palindrome](https://github.com/davidlacedonia/algorithms/blob/master/src/math/isPalindrome/index.js)

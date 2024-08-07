@@ -189,3 +189,5 @@
 ## Math
 
 [Is palindrome](https://github.com/davidlacedonia/algorithms/blob/master/src/math/isPalindrome/index.js)
+
+[Plus one](https://github.com/davidlacedonia/algorithms/blob/master/src/math/plusOne/index.js)

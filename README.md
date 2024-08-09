@@ -178,6 +178,8 @@
 
 [Copy random list](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/copyRandomList/index.js)
 
+[Sort list](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/sortList/index.js)
+
 ## Intervals
 
 [Summary ranges](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/summaryRanges/index.js)

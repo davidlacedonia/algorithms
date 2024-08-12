@@ -190,6 +190,8 @@
 
 [Valid parenthesis](https://github.com/davidlacedonia/algorithms/blob/master/src/stack/valid_parenthesis/index.js)
 
+[Min stack](https://github.com/davidlacedonia/algorithms/blob/master/src/stack/minStack/index.js)
+
 ## Math
 
 [Is palindrome](https://github.com/davidlacedonia/algorithms/blob/master/src/math/isPalindrome/index.js)

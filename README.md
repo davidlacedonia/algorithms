@@ -28,6 +28,8 @@
 
 [Interpolation search](https://github.com/davidlacedonia/algorithms/tree/master/src/search/interpolation_search/index.js)
 
+[Jump search 2](https://github.com/davidlacedonia/algorithms/tree/master/src/search/jump_search_2/index.js)
+
 ## Binary Search
 
 [Search insert](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_search/searchInsert/index.js)

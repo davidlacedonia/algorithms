@@ -182,6 +182,8 @@
 
 [Sort list](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/sortList/index.js)
 
+[Reverse between](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/reverseBetween/index.js)
+
 ## Intervals
 
 [Summary ranges](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/summaryRanges/index.js)

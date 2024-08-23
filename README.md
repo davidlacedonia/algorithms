@@ -34,6 +34,8 @@
 
 [Search insert](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_search/searchInsert/index.js)
 
+[Search matrix](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_search/searchMatrix/index.js)
+
 ## Miscellaneous
 
 [Flatten list](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/flatten_list/index.js)

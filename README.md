@@ -211,3 +211,5 @@
 [Plus one](https://github.com/davidlacedonia/algorithms/blob/master/src/math/plusOne/index.js)
 
 [Add binary](https://github.com/davidlacedonia/algorithms/blob/master/src/math/addBinary/index.js)
+
+[Square root](https://github.com/davidlacedonia/algorithms/blob/master/src/math/mySqrt/index.js)

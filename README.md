@@ -192,6 +192,8 @@
 
 [Reverse between](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/reverseBetween/index.js)
 
+[Remove Nth from end](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/removeNthFromEnd/index.js)
+
 ## Intervals
 
 [Summary ranges](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/summaryRanges/index.js)

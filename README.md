@@ -148,6 +148,8 @@
 
 [Rotate image](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/rotateImage/index.js)
 
+[Set zeroes](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/setZeroes/index.js)
+
 ## Bit manipulation
 
 [Single number](https://github.com/davidlacedonia/algorithms/blob/master/src/bit_manipulation/singleNumber/index.js)

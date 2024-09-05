@@ -114,6 +114,8 @@
 
 [Robot room cleaner](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/robot_room_cleaner/index.js)
 
+[Letter combinations](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/letterCombinations/index.js)
+
 ## BFS
 
 [Number of islands](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/islands/index.js)

@@ -116,6 +116,8 @@
 
 [Letter combinations](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/letterCombinations/index.js)
 
+[Combine](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/combine/index.js)
+
 ## BFS
 
 [Number of islands](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/islands/index.js)

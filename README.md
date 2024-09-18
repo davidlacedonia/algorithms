@@ -108,6 +108,8 @@
 
 [Dijkstra min path](https://github.com/davidlacedonia/algorithms/blob/master/src/common_problems/dijkstra_min_path/index.js)
 
+[Kadane's](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/kadane/index.js)
+
 ## Backtracking
 
 [N Queens](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/n_queens/index.js)

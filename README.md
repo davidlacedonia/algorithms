@@ -164,6 +164,8 @@
 
 [Single number](https://github.com/davidlacedonia/algorithms/blob/master/src/bit_manipulation/singleNumber/index.js)
 
+[Reverse bits](https://github.com/davidlacedonia/algorithms/blob/master/src/bit_manipulation/reverseBits/index.js)
+
 ## Hashmap
 
 [Ransom note](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/ransomNote/index.js)

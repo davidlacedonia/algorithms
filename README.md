@@ -222,6 +222,8 @@
 
 [Merge intervals](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/mergeIntervals/index.js)
 
+[Insert interval](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/insertInterval/index.js)
+
 ## Stack
 
 [Simplify path](https://github.com/davidlacedonia/algorithms/blob/master/src/stack/simplifyPath/index.js)

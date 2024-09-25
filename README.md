@@ -100,6 +100,8 @@
 
 [Union find](https://github.com/davidlacedonia/algorithms/blob/master/src/structures/union_find/index.js)
 
+[Trie](https://github.com/davidlacedonia/algorithms/blob/master/src/structures/trie/index.js)
+
 ## Common problems
 
 [Fibonacci](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/fibonacci/index.js)

@@ -202,6 +202,8 @@
 
 [Max area](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/maxArea/index.js)
 
+[Length of longest substring](https://github.com/davidlacedonia/algorithms/blob/master/src/two_pointers/lengthOfLongestSubstring/index.js)
+
 ## Linked list
 
 [Has cycle](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/hasCycle/index.js)

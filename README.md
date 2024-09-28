@@ -116,6 +116,8 @@
 
 [Max profit](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/maxProfit/index.js)
 
+[H Index](https://github.com/davidlacedonia/algorithms/tree/master/src/common_problems/hIndex/index.js)
+
 ## Backtracking
 
 [N Queens](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/n_queens/index.js)

@@ -40,6 +40,8 @@
 
 [Search rotated](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_search/searchRotated/index.js)
 
+[Search range](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_search/searchRange/index.js)
+
 ## Miscellaneous
 
 [Flatten list](https://github.com/davidlacedonia/algorithms/tree/master/src/miscellaneous/flatten_list/index.js)

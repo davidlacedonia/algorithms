@@ -132,6 +132,8 @@
 
 [Permutations](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/permutations/index.js)
 
+[Combination sum](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/combinationSum/index.js)
+
 ## BFS
 
 [Number of islands](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/islands/index.js)

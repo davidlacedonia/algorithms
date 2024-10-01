@@ -226,6 +226,8 @@
 
 [Remove Nth from end](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/removeNthFromEnd/index.js)
 
+[Delete duplicates](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/deleteDuplicates/index.js)
+
 ## Intervals
 
 [Summary ranges](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/summaryRanges/index.js)

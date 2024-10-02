@@ -178,6 +178,8 @@
 
 [Reverse bits](https://github.com/davidlacedonia/algorithms/blob/master/src/bit_manipulation/reverseBits/index.js)
 
+[Hamming weight](https://github.com/davidlacedonia/algorithms/blob/master/src/bit_manipulation/hammingWeight/index.js)
+
 ## Hashmap
 
 [Ransom note](https://github.com/davidlacedonia/algorithms/blob/master/src/hashmap/ransomNote/index.js)

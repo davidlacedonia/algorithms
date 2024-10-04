@@ -172,6 +172,8 @@
 
 [Set zeroes](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/setZeroes/index.js)
 
+[Game of life](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/gameOfLife/index.js)
+
 ## Bit manipulation
 
 [Single number](https://github.com/davidlacedonia/algorithms/blob/master/src/bit_manipulation/singleNumber/index.js)

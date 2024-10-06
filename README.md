@@ -234,6 +234,8 @@
 
 [Delete duplicates](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/deleteDuplicates/index.js)
 
+[Rotate right](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/rotateRight/index.js)
+
 ## Intervals
 
 [Summary ranges](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/summaryRanges/index.js)

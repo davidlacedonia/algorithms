@@ -2,7 +2,6 @@ import { sortedArrayToBST } from '.';
 
 test('Sorted array to BST', () => {
     const output = sortedArrayToBST([-10, -3, 0, 5, 9]);
-    console.log(output);
     expect(output).toEqual({
         val: 0,
         left: {

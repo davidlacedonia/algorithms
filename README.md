@@ -236,6 +236,8 @@
 
 [Rotate right](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/rotateRight/index.js)
 
+[Partition](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/partition/index.js)
+
 ## Intervals
 
 [Summary ranges](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/summaryRanges/index.js)

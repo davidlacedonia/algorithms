@@ -263,3 +263,7 @@
 [Add binary](https://github.com/davidlacedonia/algorithms/blob/master/src/math/addBinary/index.js)
 
 [Square root](https://github.com/davidlacedonia/algorithms/blob/master/src/math/mySqrt/index.js)
+
+## Dynamic Programming
+
+[Climbing stairs](https://github.com/davidlacedonia/algorithms/blob/master/src/dynamic_programming/climbingStairs/index.js)

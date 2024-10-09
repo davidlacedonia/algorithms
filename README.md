@@ -267,3 +267,5 @@
 ## Dynamic Programming
 
 [Climbing stairs](https://github.com/davidlacedonia/algorithms/blob/master/src/dynamic_programming/climbingStairs/index.js)
+
+[House robber](https://github.com/davidlacedonia/algorithms/blob/master/src/dynamic_programming/houseRobber/index.js)

@@ -72,6 +72,8 @@
 
 [Build tree from preorder and inorder](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/build_tree/preorder_and_inorder/index.js)
 
+[Build tree from inorder and postorder](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/build_tree/inorder_and_postorder/index.js)
+
 [Count nodes](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/countNodes/index.js)
 
 [Right side view](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/rightSideView/index.js)

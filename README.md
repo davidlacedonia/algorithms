@@ -78,6 +78,8 @@
 
 [Right side view](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/rightSideView/index.js)
 
+[Connect right](https://github.com/davidlacedonia/algorithms/tree/master/src/binary_tree/connectRight/index.js)
+
 ## Binary Search tree
 
 [Convert sorted array to BST](https://github.com/davidlacedonia/algorithms/blob/master/src/binary_search_tree/convert_sorted_array/index.js)

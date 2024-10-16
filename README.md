@@ -166,6 +166,8 @@
 
 [Clone graph](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/cloneGraph/index.js)
 
+[Evaluate division](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/evaluateDivision/index.js)
+
 ## Matrix
 
 [Valid sudoku](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/validSudoku/index.js)

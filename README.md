@@ -168,6 +168,8 @@
 
 [Evaluate division](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/evaluateDivision/index.js)
 
+[Course schedule](https://github.com/davidlacedonia/algorithms/blob/master/src/graph/courseSchedule/index.js)
+
 ## Matrix
 
 [Valid sudoku](https://github.com/davidlacedonia/algorithms/blob/master/src/matrix/validSudoku/index.js)

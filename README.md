@@ -248,6 +248,8 @@
 
 [Partition](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/partition/index.js)
 
+[LRU Cache](https://github.com/davidlacedonia/algorithms/blob/master/src/linked_list/LRUCache/index.js)
+
 ## Intervals
 
 [Summary ranges](https://github.com/davidlacedonia/algorithms/blob/master/src/intervals/summaryRanges/index.js)

@@ -142,6 +142,8 @@
 
 [Combination sum](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/combinationSum/index.js)
 
+[Word search](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/wordSearch/index.js)
+
 ## BFS
 
 [Number of islands](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/islands/index.js)

@@ -152,6 +152,8 @@
 
 [Level order](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/levelOrder/index.js)
 
+[Snakes and ladders](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/snakesAndLadders/index.js)
+
 ## DFS
 
 [Clone graph](https://github.com/davidlacedonia/algorithms/tree/master/src/dfs/clone_graph/index.js)

@@ -280,6 +280,8 @@
 
 [Square root](https://github.com/davidlacedonia/algorithms/blob/master/src/math/mySqrt/index.js)
 
+[Trailing zeroes](https://github.com/davidlacedonia/algorithms/blob/master/src/math/trailingZeroes/index.js)
+
 ## Dynamic Programming
 
 [Climbing stairs](https://github.com/davidlacedonia/algorithms/blob/master/src/dynamic_programming/climbingStairs/index.js)

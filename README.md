@@ -144,6 +144,8 @@
 
 [Word search](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/wordSearch/index.js)
 
+[Coin change](https://github.com/davidlacedonia/algorithms/tree/master/src/backtracking/coinChange/index.js)
+
 ## BFS
 
 [Number of islands](https://github.com/davidlacedonia/algorithms/tree/master/src/bfs/islands/index.js)
